@@ -5,9 +5,10 @@ import getQueryValue from '@helpers/getQueryValue';
  * List of local components
  */
 import MainLayout from '@components/Layout';
-import HeroSection from '@components/HeroSection';
+import WelcomeSection from '@components/WelcomeSection';
 import HelloSection from '@components/HelloSection';
 import WeddingSection from '@components/WeddingSection';
+import StorySection from '@components/StorySection';
 
 function Home({ location }) {
   const guestName = decodeURIComponent(getQueryValue(location, 'to') || '');
@@ -18,9 +19,10 @@ function Home({ location }) {
 
   return (
     <MainLayout>
-      <HeroSection location={location} guestName={guestName} />
+      <WelcomeSection location={location} guestName={guestName} />
       <HelloSection guestName={guestName} />
       <WeddingSection />
+      <StorySection />
     </MainLayout>
   );
 }

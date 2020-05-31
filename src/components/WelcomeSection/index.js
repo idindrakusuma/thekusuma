@@ -7,7 +7,7 @@ import { GOOGLE_CALENDAR_LINK } from '@/constants';
 import CountContainer from './CountContainer';
 import { styWrapper, styHero, styBackground } from './styles';
 
-function HeroSection({ location, guestName }) {
+function WelcomeSection({ location, guestName }) {
   const renderGuest = () => {
     return (
       <Fragment>
@@ -46,9 +46,9 @@ function HeroSection({ location, guestName }) {
   );
 }
 
-HeroSection.propTypes = {
+WelcomeSection.propTypes = {
   location: object.isRequired,
   guestName: string.isRequired,
 };
 
-export default HeroSection;
+export default WelcomeSection;
