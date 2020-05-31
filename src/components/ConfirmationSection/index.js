@@ -1,5 +1,6 @@
 import React from 'react';
 import { string } from 'prop-types';
+import { GOOGLE_CALENDAR_LINK } from '@/constants';
 import { styWrapper, styFlex } from './styles';
 
 function ConfirmationSection({ guestName }) {
@@ -15,9 +16,9 @@ function ConfirmationSection({ guestName }) {
         </div>
         <div className="row" css={styFlex}>
           <div className="col-md-3">
-            <button type="submit" className="btn btn-default btn-block">
-              Yes, Of Course
-            </button>
+            <a href={GOOGLE_CALENDAR_LINK} target="_blank" rel="noreferrer">
+              <button className="btn btn-default btn-block">Yes, Of Course</button>
+            </a>
           </div>
         </div>
       </div>

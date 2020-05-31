@@ -12,6 +12,7 @@ import StorySection from '@components/StorySection';
 import ConfirmationSection from '@components/ConfirmationSection';
 import FooterSection from '@components/FooterSection';
 import WishesSection from '@components/WishesSection';
+import FloatingMusic from '@components/FloatingMusic';
 
 function Home({ location }) {
   const guestName = decodeURIComponent(getQueryValue(location, 'to') || '');
@@ -30,6 +31,7 @@ function Home({ location }) {
       <WishesSection />
       <ConfirmationSection guestName={firstName} />
       <FooterSection />
+      <FloatingMusic />
     </MainLayout>
   );
 }

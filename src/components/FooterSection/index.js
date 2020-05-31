@@ -9,6 +9,12 @@ function FooterSection() {
             <p>
               <small className="block">&copy; 2020 Dinda & Indra Wedding. All Rights Reserved.</small>
               <small className="block">
+                Song by{' '}
+                <a href="https://www.youtube.com/watch?v=fb167KAxvrg" target="_blank" rel="noreferrer">
+                  Anandito Anisa - Pernikahan Impian
+                </a>
+              </small>
+              <small className="block">
                 Original Template from{' '}
                 <a href="http://freehtml5.co/" target="_blank" rel="noreferrer">
                   FREEHTML5.co
