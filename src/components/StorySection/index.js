@@ -5,7 +5,7 @@ import { stories } from './stories-data';
 
 function StorySection() {
   const renderStories = () => {
-    return stories.map((s) => <StoryItem {...s} />);
+    return stories.map((s, index) => <StoryItem key={index} {...s} />);
   };
 
   return (

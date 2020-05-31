@@ -11,6 +11,7 @@ import WeddingSection from '@components/WeddingSection';
 import StorySection from '@components/StorySection';
 import ConfirmationSection from '@components/ConfirmationSection';
 import FooterSection from '@components/FooterSection';
+import WishesSection from '@components/WishesSection';
 
 function Home({ location }) {
   const guestName = decodeURIComponent(getQueryValue(location, 'to') || '');
@@ -26,6 +27,7 @@ function Home({ location }) {
       <HelloSection guestName={firstName} />
       <WeddingSection />
       <StorySection />
+      <WishesSection />
       <ConfirmationSection guestName={firstName} />
       <FooterSection />
     </MainLayout>
