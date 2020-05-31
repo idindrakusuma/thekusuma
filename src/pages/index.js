@@ -2,10 +2,15 @@ import React from 'react';
 /**
  * List of local components
  */
-import MainLayout from '../components/Layout';
+import MainLayout from '@components/Layout';
+import HeroSection from '@components/HeroSection';
 
 function Home() {
-  return <MainLayout>Hello world!</MainLayout>;
+  return (
+    <MainLayout>
+      <HeroSection />
+    </MainLayout>
+  );
 }
 
 export default Home;
