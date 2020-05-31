@@ -15,6 +15,8 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.28",
+    "@loadable/component": "^5.12.0",
+    "add": "^2.0.6",
     "gatsby": "^2.21.37",
     "gatsby-plugin-emotion": "^4.3.2",
     "gatsby-plugin-eslint": "^2.0.8",
