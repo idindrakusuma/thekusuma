@@ -29,11 +29,16 @@ export const styBackground = css`
 export const styWrapper = css`
   color: #fff;
 
+  img {
+    max-width: 80px;
+    margin-bottom: 24px;
+  }
+
   h1 {
     margin-bottom: 0px;
     font-size: 100px;
     line-height: 1.5;
-    font-family: 'Sacramento', Arial, serif;
+    font-family: 'Cookie', cursive;
     color: #fff;
   }
 
@@ -42,7 +47,28 @@ export const styWrapper = css`
     font-size: 20px;
     line-height: 1.5;
     margin-bottom: 30px;
+  }
+
+  h4 {
+    font-family: 'Cookie', cursive;
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .getting-married {
     margin-top: -12px;
+  }
+
+  .to-dearest {
+    margin-bottom: 12px;
+  }
+
+  .to-dearest-name {
+    border-bottom: 1px solid;
+    padding-bottom: 12px;
+    max-width: 250px;
+    margin: auto auto 30px auto;
   }
 
   a {
@@ -55,7 +81,7 @@ export const styWrapperCount = css`
   width: 100px;
   height: 100px;
   background: rgba(241, 78, 149, 0.8);
-  margin: 0 4px;
+  margin: 0 8px;
   border-radius: 50%;
   position: relative;
   animation: pulse 1s ease infinite;

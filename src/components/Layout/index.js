@@ -38,7 +38,8 @@ function MainLayout({ children }) {
           rel="stylesheet"
           type="text/css"
         />
-        <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet" />
+        {/* <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet" /> */}
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet"></link>
       </Helmet>
       <div id="page">{children}</div>
     </Fragment>
