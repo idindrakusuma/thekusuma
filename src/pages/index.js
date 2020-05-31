@@ -1,5 +1,11 @@
-import React from "react"
+import React from 'react';
+/**
+ * List of local components
+ */
+import MainLayout from '../components/Layout';
 
-export default function Home() {
-  return <div>Hello world!</div>
+function Home() {
+  return <MainLayout>Hello world!</MainLayout>;
 }
+
+export default Home;
