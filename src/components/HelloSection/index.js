@@ -1,4 +1,4 @@
-import React, { Fragment } from 'React';
+import React, { Fragment } from 'react';
 import { string } from 'prop-types';
 
 import Bride from '@assets/images/bride.jpg';
