@@ -4,16 +4,6 @@ import Background from '@assets/images/img_bg_2.jpg';
 export const styHero = css`
   width: 100%;
   height: 100vh;
-
-  .overlay {
-    z-index: 0;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.3);
-  }
 `;
 
 export const styBackground = css`

@@ -369,7 +369,6 @@ figure {
 
 #fh5co-counter,
 #fh5co-event {
-  height: 850px;
   float: left;
 }
 #fh5co-counter .display-t,
@@ -1019,6 +1018,11 @@ form label {
   padding: 7em 0;
   clear: both;
 }
+
+#fh5co-couple {
+  min-height: 100vh;
+}
+
 @media screen and (max-width: 768px) {
   #fh5co-testimonial,
   #fh5co-services,
@@ -1897,6 +1901,10 @@ form label {
 
 .js .animate-box {
   opacity: 0;
+}
+
+.main-font {
+  font-family: 'Cookie', cursive !important;
 }
 
 /*# sourceMappingURL=style.css.map */
