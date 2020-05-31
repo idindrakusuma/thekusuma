@@ -6,4 +6,15 @@ module.exports = {
   rules: {
     'jsx-a11y/accessible-emoji': 'off',
   },
+  settings: {
+    'import/resolver': {
+      alias: [
+        ['@static', './static'],
+        ['@components', './src/components'],
+        ['@helpers', './src/helpers'],
+        ['@pages', './src/pages'],
+        ['@', './src'],
+      ],
+    },
+  },
 };

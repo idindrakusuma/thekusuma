@@ -23,6 +23,9 @@
     "react-helmet": "^6.0.0"
   },
   "devDependencies": {
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.20.2",
+    "gatsby-alias-imports": "^1.0.4",
     "prettier": "2.0.5"
   },
   "repository": {
