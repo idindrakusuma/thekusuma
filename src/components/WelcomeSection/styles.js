@@ -14,6 +14,16 @@ export const styBackground = css`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 400px) {
+    .title {
+      font-size: 40px;
+    }
+
+    .sub-title {
+      font-size: 28px;
+    }
+  }
 `;
 
 export const styWrapper = css`
@@ -71,7 +81,7 @@ export const styWrapperCount = css`
   width: 100px;
   height: 100px;
   background: rgba(241, 78, 149, 0.8);
-  margin: 0 8px;
+  margin: 8px;
   border-radius: 50%;
   position: relative;
   animation: pulse 1s ease infinite;

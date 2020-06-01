@@ -34,8 +34,8 @@ function WelcomeSection({ location, guestName }) {
           <div className="row" css={styWrapper}>
             <div className="col-md-8 col-md-offset-2 text-center">
               <img src={WeddingImg} alt="wedding-dinda-indra" />
-              <h4>The Wedding of</h4>
-              <h1>Dinda &amp; Indra</h1>
+              <h4 className="sub-title">The Wedding of</h4>
+              <h1 className="title">Dinda &amp; Indra</h1>
               <CountContainer />
               {renderGuest()}
             </div>
