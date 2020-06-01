@@ -8,6 +8,7 @@ import MainLayout from '@components/Layout';
 import WelcomeSection from '@components/WelcomeSection';
 import HelloSection from '@components/HelloSection';
 import WeddingSection from '@components/WeddingSection';
+import LocationSection from '@components/LocationSection';
 import StorySection from '@components/StorySection';
 import ConfirmationSection from '@components/ConfirmationSection';
 import FooterSection from '@components/FooterSection';
@@ -27,6 +28,7 @@ function Home({ location }) {
       <WelcomeSection location={location} guestName={guestName} />
       <HelloSection guestName={firstName} />
       <WeddingSection />
+      <LocationSection />
       <StorySection />
       <WishesSection />
       <ConfirmationSection guestName={firstName} />
