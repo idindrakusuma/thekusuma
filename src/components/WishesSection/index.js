@@ -3,7 +3,7 @@ import WishesContainer from './WishesContainer';
 
 function WishesSection() {
   return (
-    <div id="fh5co-testimonial" className="fh5co-section-gray">
+    <div id="fh5co-testimonial">
       <div className="container">
         <div className="row">
           <div className="row">

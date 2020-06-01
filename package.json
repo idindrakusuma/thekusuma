@@ -24,7 +24,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0"
+    "react-helmet": "^6.0.0",
+    "react-image-gallery": "^1.0.7"
   },
   "devDependencies": {
     "eslint-config-jquery": "^3.0.0",

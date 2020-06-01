@@ -10,9 +10,10 @@ import HelloSection from '@components/HelloSection';
 import WeddingSection from '@components/WeddingSection';
 import LocationSection from '@components/LocationSection';
 import StorySection from '@components/StorySection';
+import PhotoSection from '@components/PhotoSection/Loadable';
+import WishesSection from '@components/WishesSection';
 import ConfirmationSection from '@components/ConfirmationSection';
 import FooterSection from '@components/FooterSection';
-import WishesSection from '@components/WishesSection';
 import FloatingMusic from '@components/FloatingMusic/Loadable';
 
 function Home({ location }) {
@@ -30,6 +31,7 @@ function Home({ location }) {
       <WeddingSection />
       <LocationSection />
       <StorySection />
+      <PhotoSection />
       <WishesSection />
       <ConfirmationSection guestName={firstName} />
       <FooterSection />

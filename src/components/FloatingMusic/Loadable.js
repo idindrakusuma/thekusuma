@@ -1,4 +1,4 @@
 import loadable from '@loadable/component';
 
-const FloatingMusic = loadable(() => import(/* webpackChunkName: "floating-music" */ './index'));
+const FloatingMusic = loadable(() => import(/* webpackChunkName: "chunk-floating-music" */ './index'));
 export default FloatingMusic;
