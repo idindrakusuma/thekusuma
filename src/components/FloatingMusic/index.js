@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect, useCallback } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 
 import isMobileDevice from '@helpers/isMobileDevice';
 import IconMusic from '@assets/images/music-icon.png';
