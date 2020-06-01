@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 
 import IconMusic from '@assets/images/music-icon.png';
 import IconMusicStop from '@assets/images/music-stop-icon.png';
@@ -7,8 +7,9 @@ import { styMusicFloating } from './styles';
 
 function FloatingMusic() {
   const [play, setPlay] = useState(true);
+  const alreadyPlay = useRef(false);
 
-  const toggleMusic = () => {
+  const toggleMusic = useCallback(() => {
     const myAudio = document.getElementById('myAudio');
     /**
      * This function built-in with html5 function
@@ -21,11 +22,24 @@ function FloatingMusic() {
     }
 
     setPlay(!play);
-  };
+  }, [play]);
+
+  /**
+   * side effect to play music after delay  in 4s
+   */
+  useEffect(() => {
+    if (!alreadyPlay.current) {
+      const myAudio = document.getElementById('myAudio');
+      setTimeout(() => {
+        myAudio.play();
+        alreadyPlay.current = true;
+      }, 4000);
+    }
+  }, []);
 
   return (
     <div css={styMusicFloating}>
-      <audio id="myAudio" loop={true} autoPlay className="hide">
+      <audio id="myAudio" loop={true} className="hide">
         <source src={MusicBacksound} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
