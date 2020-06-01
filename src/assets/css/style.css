@@ -1207,7 +1207,7 @@ form label {
   font-size: 60px;
   margin-bottom: 10px;
   line-height: 1.5;
-  font-weight: bold;
+  font-weight: 500;
   color: #f14e95;
   font-family: 'Sacramento', Arial, serif;
 }
@@ -1912,6 +1912,10 @@ form label {
     font-size: 16px !important;
     margin: 0 0 8px 0 !important;
   }
+}
+
+.body-hidden {
+  overflow: hidden !important;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -24,3 +24,32 @@ export const styMusicFloating = css`
     }
   }
 `;
+
+export const styWrapperModal = css`
+  .modal-dialog {
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal {
+    display: block;
+    width: 100%;
+    background: rgba(44, 62, 80,0.8);
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  .sub-title {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .title {
+    font-family: 'Cookie', cursive;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0px;
+  }
+`;
