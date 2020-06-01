@@ -15,7 +15,7 @@ function WishesItem({ image, name, infoName, description, isActive }) {
           <h4>{name}</h4>
           <span className="infoName">{infoName}</span>
           <blockquote>
-            <p>{description}</p>
+            <p className="description">{description}</p>
           </blockquote>
         </div>
       </div>

@@ -63,4 +63,10 @@ export const styWrapperItem = css`
   .active {
     diplay: block;
   }
+
+  @media screen and (max-width: 400px) {
+    .description {
+      font-size: 16px !important;
+    }
+  }
 `;

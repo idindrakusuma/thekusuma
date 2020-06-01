@@ -4,15 +4,17 @@ import { string } from 'prop-types';
 import Bride from '@assets/images/bride.jpg';
 import Groom from '@assets/images/bride.jpg';
 
+import { styWrapper } from './styles';
+
 function HelloSection({ guestName }) {
   return (
     <Fragment>
-      <div id="fh5co-couple">
+      <div id="fh5co-couple" css={styWrapper}>
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
               <h2 className="main-font">{`Hallo, ${guestName}!`}</h2>
-              <h3>October 3rd, 2020 HARRIS Hotel Sentraland, Semarang</h3>
+              <h3 className="sub-title">October 3rd, 2020 HARRIS Hotel Sentraland, Semarang</h3>
               <p>We invited you to celebrate our wedding</p>
             </div>
           </div>

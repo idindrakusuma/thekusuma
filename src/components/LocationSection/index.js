@@ -1,16 +1,17 @@
 import React, { Fragment } from 'react';
 import { GOOGLE_MAPS_LINK } from '@/constants';
+import { styWrapper } from './styles';
 
 function LocationSection() {
   return (
     <Fragment>
-      <div id="fh5co-couple-story" className="fh5co-section-gray">
+      <div id="fh5co-couple-story" className="fh5co-section-gray" css={styWrapper}>
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
               <span>OUR SPECIAL PLACE</span>
               <h2 className="main-font">Location</h2>
-              <p>
+              <p className="sub-title">
                 <a
                   href={GOOGLE_MAPS_LINK}
                   title="Click untuk melihat peta di Google Maps"

@@ -24,6 +24,16 @@ export const styBackground = css`
       font-size: 28px;
     }
   }
+
+  @media screen and (max-width: 500px) {
+    .title {
+      font-size: 54px;
+    }
+
+    .sub-title {
+      font-size: 28px;
+    }
+  }
 `;
 
 export const styWrapper = css`
@@ -74,6 +84,23 @@ export const styWrapper = css`
   a {
     color: #f14e95;
   }
+
+  @media screen and (max-width: 330px) {
+    img {
+      max-width: 40px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    .to-dearest {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+
+    .to-dearest-name {
+      margin: auto auto 16px auto;
+    }
+  }
 `;
 
 export const styWrapperCount = css`
@@ -91,6 +118,22 @@ export const styWrapperCount = css`
     font-size: 30px;
     color: #fff;
     margin: 20px 0 0 0;
+  }
+
+  @media screen and (max-width: 330px) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media screen and (max-width: 500px) and (min-width: 401px) {
+    width: 75px;
+    height: 75px;
+    margin: 4px;
+    font-size: 12px;
+
+    h3 {
+      font-size: 24px;
+    }
   }
 `;
 

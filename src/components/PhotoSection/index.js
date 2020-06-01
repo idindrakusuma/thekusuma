@@ -16,7 +16,7 @@ function PhotoSection() {
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
               <span>Our Memories</span>
               <h2 className="main-font">Photo Gallery</h2>
-              <p>
+              <p className="sub-title">
                 "Marriage is a gift from God, the quality of marriage is our gift to God" <br /> - L.W. Clayton -
               </p>
             </div>

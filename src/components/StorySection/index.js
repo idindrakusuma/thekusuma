@@ -16,7 +16,7 @@ function StorySection() {
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
               <span>We Love Each Other</span>
               <h2 className="main-font">Our Story</h2>
-              <p>Need to add one or two sentences in in section</p>
+              <p className="sub-title">Need to add one or two sentences in in section</p>
             </div>
           </div>
           <div className="row">
