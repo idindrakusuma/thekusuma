@@ -6,7 +6,7 @@ import MusicBacksound from '@assets/music/lagu-pernikahan-impian.mp3';
 import { styMusicFloating } from './styles';
 
 function FloatingMusic() {
-  const [play, setPlay] = useState(true);
+  const [play, setPlay] = useState(false);
   const alreadyPlay = useRef(false);
 
   const toggleMusic = useCallback(() => {
@@ -32,6 +32,7 @@ function FloatingMusic() {
       const myAudio = document.getElementById('myAudio');
       setTimeout(() => {
         myAudio.play();
+        setPlay(true);
         alreadyPlay.current = true;
       }, 4000);
     }
