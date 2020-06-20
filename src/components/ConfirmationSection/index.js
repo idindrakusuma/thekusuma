@@ -10,14 +10,14 @@ function ConfirmationSection({ guestName }) {
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-            <h2 className="main-font">{`Are You Attending, ${guestName}?`}</h2>
-            <p>Need to add one or two sentences in in section. Thanks!</p>
+            <h2 className="main-font">{` Apakah kamu hadir, ${guestName}?`}</h2>
+            <p>Atas kehadiran & do'a restu saudara/i, kami ucapkan teima kasih. <br/> Wassalamualaikum Warahmatullahi Wabarakatuh.</p>
           </div>
         </div>
         <div className="row" css={styFlex}>
           <div className="col-md-3">
             <a href={GOOGLE_CALENDAR_LINK} target="_blank" rel="noreferrer">
-              <button className="btn btn-default btn-block">Yes, Of Course</button>
+              <button className="btn btn-default btn-block">Ya, tentu saja!</button>
             </a>
           </div>
         </div>

@@ -29,7 +29,7 @@ function WelcomeSection({ location, guestName }) {
   const renderGuest = () => {
     return (
       <Fragment>
-        <h2 className="to-dearest">To Our Dearest</h2>
+        <h2 className="to-dearest">To our Dearest</h2>
         <h2 className="to-dearest-name">{guestName}</h2>
         <a
           href={GOOGLE_CALENDAR_LINK}

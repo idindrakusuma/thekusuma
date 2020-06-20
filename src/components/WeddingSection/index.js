@@ -11,23 +11,25 @@ function WeddingSection() {
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-              <span>Our Special Event</span>
-              <h2 className="main-font">Wedding Details</h2>
+              <span className="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</span>
+              <h2 className="main-font">
+                Akad Nikah dan Syukuran Pernikahan <br /> insha Allah akan diselenggarakan pada:
+              </h2>
             </div>
           </div>
           <div className="row">
             <div className="col-md-10 col-md-offset-1">
               <WeddingInfoBox
-                title="Main Ceremony"
-                time="08:00 AM - 10:00 AM"
-                date="Sat - October, 3rd 2020"
-                description="need to add detail description about main ceremony. We can add up to 3 sentences yaa"
+                title="Akad Nikah"
+                time="08:00 AM WIB"
+                date="Sabtu, 03 Oktober 2020"
+                description="Lokasi: Orange Ballroom @ HARRIS Hotel Sentraland, Semarang"
               />
               <WeddingInfoBox
-                title="Wedding Party"
-                time="11:00 AM - 13:00 PM"
-                date="Sat - October, 3rd 2020"
-                description="need to add detail description about main ceremony. We can add up to 3 sentences yaa"
+                title="Syukuran Pernikahan"
+                time="11:00 WIB - 12:30 WIB"
+                date="Sabtu, 03 Oktober 2020"
+                description="Lokasi: Orange Ballroom @ HARRIS Hotel Sentraland, Semarang"
               />
             </div>
           </div>
