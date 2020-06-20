@@ -34,7 +34,7 @@ export const styWrapperModal = css`
   .modal {
     display: block;
     width: 100%;
-    background: rgba(44, 62, 80,0.8);
+    background: rgba(44, 62, 80, 0.8);
   }
 
   .modal-content {

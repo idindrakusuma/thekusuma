@@ -140,3 +140,19 @@ export const styWrapperCount = css`
 export const styMargin = (px) => css`
   margin: ${px};
 `;
+
+export const styButton = css`
+  margin: 4px 8px;
+  
+  &:hover {
+    background: rgba(241, 78, 149, 0.8);
+    color: #fff;
+    border-color: rgba(241, 78, 149, 0.8);
+  }
+`;
+
+export const styButtonDetail = css`
+  animation: pulse 1s ease infinite;
+
+  ${styButton}
+`;
