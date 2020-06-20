@@ -9,7 +9,7 @@ import CountContainer from './CountContainer';
 import { styWrapper, styHero, styBackground, styButtonDetail, styButton } from './styles';
 
 function WelcomeSection({ location, guestName }) {
-  const [isMobileView, setIsMobileView] = useState(true);
+  const [isMobileView, setIsMobileView] = useState(false);
 
   const handleShowDetail = () => {
     const myAudio = document.getElementById('myAudio');
