@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import { object, string } from 'prop-types';
 
 import isMobileDevice from '@helpers/isMobileDevice';
@@ -9,6 +9,8 @@ import CountContainer from './CountContainer';
 import { styWrapper, styHero, styBackground, styButtonDetail, styButton } from './styles';
 
 function WelcomeSection({ location, guestName }) {
+  const [isMobileView, setIsMobileView] = useState(false);
+
   const handleShowDetail = () => {
     const myAudio = document.getElementById('myAudio');
     const element = document.getElementById('fh5co-couple');
@@ -17,6 +19,12 @@ function WelcomeSection({ location, guestName }) {
     /** scroll into detail view */
     element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   };
+
+  useEffect(() => {
+    if (isMobileDevice()) {
+      setIsMobileView(true);
+    }
+  }, []);
 
   const renderGuest = () => {
     return (
@@ -32,7 +40,7 @@ function WelcomeSection({ location, guestName }) {
         >
           Tambahkan ke Kalender
         </a>
-        {!isMobileDevice() && (
+        {!isMobileView && (
           <button onClick={handleShowDetail} css={styButtonDetail} className="btn btn-default btn-sm">
             Lihat Detail Acara
           </button>
