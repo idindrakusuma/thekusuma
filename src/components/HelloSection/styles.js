@@ -6,6 +6,11 @@ export const styWrapper = css`
     font-weight: 600;
   }
 
+  p {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
   @media screen and (max-width: 500px) {
     .sub-title {
       font-size: 18px;
@@ -14,6 +19,12 @@ export const styWrapper = css`
 
     p {
       font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    p {
+      font-size: 14px;
     }
   }
 `;
