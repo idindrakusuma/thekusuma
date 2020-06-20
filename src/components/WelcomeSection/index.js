@@ -1,21 +1,42 @@
 import React, { Fragment } from 'react';
 import { object, string } from 'prop-types';
 
+import isMobileDevice from '@helpers/isMobileDevice';
 import WeddingImg from '@assets/images/wedding-logo.png';
 import { GOOGLE_CALENDAR_LINK } from '@/constants';
 
 import CountContainer from './CountContainer';
-import { styWrapper, styHero, styBackground } from './styles';
+import { styWrapper, styHero, styBackground, styButtonDetail, styButton } from './styles';
 
 function WelcomeSection({ location, guestName }) {
+  const handleShowDetail = () => {
+    const myAudio = document.getElementById('myAudio');
+    const element = document.getElementById('fh5co-couple');
+    myAudio.play();
+
+    /** scroll into detail view */
+    element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+  };
+
   const renderGuest = () => {
     return (
       <Fragment>
         <h2 className="to-dearest">To Our Dearest</h2>
         <h2 className="to-dearest-name">{guestName}</h2>
-        <a href={GOOGLE_CALENDAR_LINK} className="btn btn-default btn-sm" target="_blank" rel="noreferrer">
-          Add to My Calendar
+        <a
+          href={GOOGLE_CALENDAR_LINK}
+          css={styButton}
+          className="btn btn-default btn-sm"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Tambahkan ke Kalender
         </a>
+        {!isMobileDevice() && (
+          <button onClick={handleShowDetail} css={styButtonDetail} className="btn btn-default btn-sm">
+            Lihat Detail Acara
+          </button>
+        )}
       </Fragment>
     );
   };
