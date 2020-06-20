@@ -8,7 +8,6 @@ function WishesSection() {
         <div className="row">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-              <span>#TheKusuma</span>
               <h2 className="main-font">Do'a dari Sahabat</h2>
             </div>
           </div>

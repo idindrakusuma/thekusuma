@@ -14,7 +14,6 @@ function PhotoSection() {
         <div className="row">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-              <span>#TheKusuma</span>
               <h2 className="main-font">Cerita Kita</h2>
               <p className="sub-title">
                 "And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy. Indeed in that are signs for a people who give thought" (Ar-Rum 30:21).

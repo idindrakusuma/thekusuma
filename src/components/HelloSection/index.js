@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import { string } from 'prop-types';
 
-import Bride from '@assets/images/bride.jpg';
-import Groom from '@assets/images/bride.jpg';
+import Bride from '@assets/images/p-dinda.jpg';
+import Groom from '@assets/images/p-indra.jpg';
 
 import { styWrapper } from './styles';
 
