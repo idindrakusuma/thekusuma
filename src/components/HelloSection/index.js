@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import { string } from 'prop-types';
 
-import Bride from '@assets/images/bride.jpg';
-import Groom from '@assets/images/bride.jpg';
+import Bride from '@assets/images/p-dinda-2.jpg';
+import Groom from '@assets/images/p-indra.jpg';
 
 import { styWrapper } from './styles';
 
@@ -13,21 +13,24 @@ function HelloSection({ guestName }) {
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-              <h2 className="main-font">{`Hallo, ${guestName}!`}</h2>
-              <h3 className="sub-title">October 3rd, 2020 HARRIS Hotel Sentraland, Semarang</h3>
-              <p>We invited you to celebrate our wedding</p>
+              <h2 className="main-font">Assalamualaikum Wr. Wb</h2>
+              <h3 className="sub-title">03 Oktober 2020, HARRIS Hotel Sentraland, Semarang</h3>
+              <p className="info">
+                Dengan memohon Rahmat dan Ridho Illahi, teriring niat menjalankan Sunnah Rasulullah ﷺ untuk membentuk
+                rumah tangga yang Sakinah, Mawaddah wa Rahmah, kami mohon do'a agar senantiasa diberikan kelancaran dan
+                keberkahan.
+              </p>
             </div>
           </div>
           <div className="couple-wrap">
             <div className="couple-half">
               <div className="groom">
-                <img src={Bride} alt="groom" className="img-responsive" />
+                <img src={Bride} alt="groom" className="img-responsive" loading="lazy" />
               </div>
               <div className="desc-groom">
-                <h3 className="main-font">Dinda Saraswati</h3>
+                <h3 className="main-font">Dinda Saraswati, S.I.Kom.</h3>
                 <p>
-                  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                  the blind texts. Separated they live in Bookmarksgrove
+                  Putri Bapak Totok Somo Dipoyono <br />& Ibu Setyo Listiani
                 </p>
               </div>
             </div>
@@ -36,13 +39,12 @@ function HelloSection({ guestName }) {
             </p>
             <div className="couple-half">
               <div className="bride">
-                <img src={Groom} alt="groom" className="img-responsive" />
+                <img src={Groom} alt="groom" className="img-responsive" loading="lazy" />
               </div>
               <div className="desc-bride">
-                <h3 className="main-font">Indra Kusuma</h3>
+                <h3 className="main-font">Indra Kusuma, S.Kom.</h3>
                 <p>
-                  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
-                  the blind texts. Separated they live in Bookmarksgrove
+                  Putra Bapak Bunari <br />& Ibu Suratun
                 </p>
               </div>
             </div>

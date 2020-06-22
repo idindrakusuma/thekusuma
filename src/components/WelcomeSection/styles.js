@@ -1,5 +1,5 @@
 import { css } from '@emotion/core';
-import Background from '@assets/images/img_bg_2.jpg';
+import Background from '@assets/images/bg-welcome.jpg';
 
 export const styHero = css`
   width: 100%;
@@ -9,6 +9,7 @@ export const styHero = css`
 export const styBackground = css`
   background-size: cover;
   background-image: url(${Background});
+  background-position: center;
   width: 100%;
   height: 100%;
   display: flex;
@@ -143,7 +144,8 @@ export const styMargin = (px) => css`
 
 export const styButton = css`
   margin: 4px 8px;
-  
+  color: #f14e95;
+
   &:hover {
     background: rgba(241, 78, 149, 0.8);
     color: #fff;

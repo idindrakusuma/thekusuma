@@ -14,7 +14,7 @@ function WeddingInfoBox({ title, date, time, description }) {
           <i className="icon-calendar"></i>
           <span>{date}</span>
         </div>
-        <p>{description}</p>
+        <p dangerouslySetInnerHTML={{ __html: description }} />
       </div>
     </div>
   );

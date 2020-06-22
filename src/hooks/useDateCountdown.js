@@ -5,8 +5,9 @@ const INTERVAL_TIME = 1000;
 const DAY_PER_SECONDS = 86400;
 const HOUR_PER_SECONDS = 3600;
 const MINUTE_PER_SECONDS = 60;
+const INDOTIME = 25200;
 
-const getEpochTime = () => Math.floor(new Date().getTime() / 1000);
+const getEpochTime = () => Math.floor(new Date().getTime() / 1000) + INDOTIME;
 
 function useDateCountdown() {
   const [days, setDays] = useState(0);

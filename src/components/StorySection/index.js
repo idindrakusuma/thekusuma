@@ -5,7 +5,7 @@ import { stories } from './stories-data';
 
 function StorySection() {
   const renderStories = () => {
-    return stories.map((s, index) => <StoryItem key={index} {...s} />);
+    return stories.map((s, index) => <StoryItem key={index} {...s} isInverted={index % 2 === 1} />);
   };
 
   return (
@@ -14,9 +14,8 @@ function StorySection() {
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-              <span>We Love Each Other</span>
-              <h2 className="main-font">Our Story</h2>
-              <p className="sub-title">Need to add one or two sentences in in section</p>
+              <h2 className="main-font">Jalan Berdua</h2>
+              <p className="sub-title">Kisah kasih sejak awal kami berjumpa</p>
             </div>
           </div>
           <div className="row">

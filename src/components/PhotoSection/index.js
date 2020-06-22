@@ -14,10 +14,9 @@ function PhotoSection() {
         <div className="row">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-              <span>Our Memories</span>
-              <h2 className="main-font">Photo Gallery</h2>
+              <h2 className="main-font">#TheKusuma</h2>
               <p className="sub-title">
-                "Marriage is a gift from God, the quality of marriage is our gift to God" <br /> - L.W. Clayton -
+                "And of His signs is that He created for you from yourselves mates that you may find tranquility in them; and He placed between you affection and mercy. Indeed in that are signs for a people who give thought" (Ar-Rum 30:21).
               </p>
             </div>
           </div>
