@@ -19,6 +19,7 @@ import FloatingMusic from '@components/FloatingMusic/Loadable';
 function Home({ location }) {
   const guestName = decodeURIComponent(getQueryValue(location, 'to') || '');
   const firstName = guestName.replace(/ .*/, '');
+  const isAnonymGuest = guestName === '';
   /**
    * @TODO
    * should be showing error message when name of guest is empty!
@@ -26,16 +27,16 @@ function Home({ location }) {
 
   return (
     <MainLayout>
-      <WelcomeSection location={location} guestName={guestName} />
+      <WelcomeSection location={location} guestName={guestName} isAnonymGuest={isAnonymGuest} />
       <HelloSection guestName={firstName} />
       <WeddingSection />
       <LocationSection />
       <StorySection />
       <PhotoSection />
       <WishesSection />
-      <ConfirmationSection guestName={firstName} />
-      <FooterSection />
-      <FloatingMusic />
+      <ConfirmationSection guestName={firstName} isAnonymGuest={isAnonymGuest} />
+      <FooterSection isAnonymGuest={isAnonymGuest} />
+      {/* <FloatingMusic /> */}
     </MainLayout>
   );
 }

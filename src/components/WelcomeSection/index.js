@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import { object, string } from 'prop-types';
+import { object, string, bool } from 'prop-types';
 
 import isMobileDevice from '@helpers/isMobileDevice';
 import WeddingImg from '@assets/images/wedding-logo.png';
@@ -8,7 +8,7 @@ import { GOOGLE_CALENDAR_LINK } from '@/constants';
 import CountContainer from './CountContainer';
 import { styWrapper, styHero, styBackground, styButtonDetail, styButton } from './styles';
 
-function WelcomeSection({ location, guestName }) {
+function WelcomeSection({ location, guestName, isAnonymGuest }) {
   const [isMobileView, setIsMobileView] = useState(false);
 
   const handleShowDetail = () => {
@@ -20,13 +20,9 @@ function WelcomeSection({ location, guestName }) {
     element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   };
 
-  useEffect(() => {
-    if (isMobileDevice()) {
-      setIsMobileView(true);
-    }
-  }, []);
+  const renderGuestSection = () => {
+    if (isAnonymGuest) return null;
 
-  const renderGuest = () => {
     return (
       <Fragment>
         <h2 className="to-dearest">To our Dearest</h2>
@@ -40,10 +36,26 @@ function WelcomeSection({ location, guestName }) {
         >
           Tambahkan ke Kalender
         </a>
-        {!isMobileView && (
-          <button onClick={handleShowDetail} css={styButtonDetail} className="btn btn-default btn-sm">
-            Lihat Detail Acara
-          </button>
+      </Fragment>
+    );
+  };
+
+  useEffect(() => {
+    if (isMobileDevice()) {
+      setIsMobileView(true);
+    }
+  }, []);
+
+  const renderGuest = () => {
+    return (
+      <Fragment>
+        {renderGuestSection()}
+        {(!isMobileView || isAnonymGuest) && (
+          <div className="btn-see-detail">
+            <button onClick={handleShowDetail} css={styButtonDetail} className="btn btn-default btn-sm">
+              Lihat Detail Acara
+            </button>
+          </div>
         )}
       </Fragment>
     );
@@ -76,8 +88,9 @@ function WelcomeSection({ location, guestName }) {
 }
 
 WelcomeSection.propTypes = {
-  location: object.isRequired,
   guestName: string.isRequired,
+  isAnonymGuest: bool.isRequired,
+  location: object.isRequired,
 };
 
 export default WelcomeSection;

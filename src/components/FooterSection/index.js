@@ -1,8 +1,9 @@
 import React from 'react';
+import { bool } from 'prop-types';
 
-function FooterSection() {
+function FooterSection({ isAnonymGuest }) {
   return (
-    <footer id="fh5co-footer" role="contentinfo">
+    <footer id="fh5co-footer" role="contentinfo" className={`${isAnonymGuest ? 'footer__with-border' : ''}`}>
       <div className="container">
         <div className="row copyright">
           <div className="col-md-12 text-center">
@@ -33,5 +34,9 @@ function FooterSection() {
     </footer>
   );
 }
+
+FooterSection.propTypes = {
+  isAnonymGuest: bool.isRequired,
+};
 
 export default React.memo(FooterSection);

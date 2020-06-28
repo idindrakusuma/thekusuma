@@ -1907,6 +1907,18 @@ form label {
   font-family: 'Cookie', cursive !important;
 }
 
+.and-love {
+  display: none;
+}
+
+.footer__with-border {
+  border-top: 4px solid rgba(143, 152, 159, 0.17);
+}
+
+.wedding-box__mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 400px) {
   .sub-title {
     font-size: 16px !important;
@@ -1916,6 +1928,68 @@ form label {
 
 .body-hidden {
   overflow: hidden !important;
+}
+
+/* styles for iPhone 6/7/8 plus */
+@media only screen and (max-width: 420px) {
+  .btn-see-detail {
+    margin-top: 50px;
+  }
+
+  /* hello sections */
+  .hs {
+    margin-top: 22px !important;
+    margin-bottom: 32px !important;
+  }
+
+  .parent-name {
+    margin-top: -16px !important;
+  }
+
+  .parent-name__top {
+    margin-bottom: -8px;
+  }
+
+  .and-love {
+    display: block;
+    text-align: center;
+    font-size: 5em !important;
+    color: rgba(241, 78, 149, 0.8);
+    font-weight: bold;
+  }
+
+  .main-font__wedding {
+    font-size: 32px !important;
+  }
+
+  .sub-title__wedding {
+    font-size: 14px !important;
+    text-transform: none !important;
+  }
+
+  .event-col {
+    display: flex !important;
+    width: 100% !important;
+    margin-bottom: 12px !important;
+  }
+
+  .event-col > span {
+    margin-left: 8px !important;
+  }
+
+  .wedding-box__mobile {
+    display: flex;
+    width: 100%;
+    text-align: left;
+  }
+
+  .wedding-box__mobile > span {
+    margin-left: 8px;
+  }
+
+  .wedding-box__desktop {
+    display: none !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

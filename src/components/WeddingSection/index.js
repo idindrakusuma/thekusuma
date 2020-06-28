@@ -12,8 +12,8 @@ function WeddingSection() {
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
               <span className="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</span>
-              <h2 className="main-font">Akad Nikah dan Syukuran Pernikahan</h2>
-              <span className="sub-title">insha Allah akan diselenggarakan pada:</span>
+              <h2 className="main-font main-font__wedding">Akad Nikah dan Syukuran Pernikahan</h2>
+              <span className="sub-title sub-title__wedding">Insha Allah akan Diselenggarakan pada:</span>
             </div>
           </div>
           <div className="row">
@@ -23,12 +23,14 @@ function WeddingSection() {
                 time="08:00 AM WIB"
                 date="Sabtu, 03 Oktober 2020"
                 description="Lokasi: Orange Ballroom <br /> @ HARRIS Hotel Sentraland, Semarang"
+                mobileDescription="Orange Ballroom <br />HARRIS Hotel Sentraland, Semarang"
               />
               <WeddingInfoBox
                 title="Syukuran Pernikahan"
                 time="11:00 WIB - 12:30 WIB"
                 date="Sabtu, 03 Oktober 2020"
                 description="Lokasi: Orange Ballroom <br /> @ HARRIS Hotel Sentraland, Semarang"
+                mobileDescription="Orange Ballroom <br /> HARRIS Hotel Sentraland, Semarang"
               />
             </div>
           </div>

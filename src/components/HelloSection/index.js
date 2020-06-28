@@ -14,7 +14,7 @@ function HelloSection({ guestName }) {
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
               <h2 className="main-font">Assalamualaikum Wr. Wb</h2>
-              <h3 className="sub-title">03 Oktober 2020, HARRIS Hotel Sentraland, Semarang</h3>
+              <h3 className="sub-title hs">03 Oktober 2020, HARRIS Hotel Sentraland, Semarang</h3>
               <p className="info">
                 Dengan memohon Rahmat dan Ridho Illahi, teriring niat menjalankan Sunnah Rasulullah ﷺ untuk membentuk
                 rumah tangga yang Sakinah, Mawaddah wa Rahmah, kami mohon do'a agar senantiasa diberikan kelancaran dan
@@ -29,7 +29,7 @@ function HelloSection({ guestName }) {
               </div>
               <div className="desc-groom">
                 <h3 className="main-font">Dinda Saraswati, S.I.Kom.</h3>
-                <p>
+                <p className="parent-name parent-name__top">
                   Putri Bapak Totok Somo Dipoyono <br />& Ibu Setyo Listiani
                 </p>
               </div>
@@ -37,13 +37,16 @@ function HelloSection({ guestName }) {
             <p className="heart text-center">
               <i className="icon-heart2"></i>
             </p>
+            <div className="and-love">
+              <i>&</i>
+            </div>
             <div className="couple-half">
               <div className="bride">
                 <img src={Groom} alt="groom" className="img-responsive" loading="lazy" />
               </div>
               <div className="desc-bride">
                 <h3 className="main-font">Indra Kusuma, S.Kom.</h3>
-                <p>
+                <p className="parent-name">
                   Putra Bapak Bunari <br />& Ibu Suratun
                 </p>
               </div>
