@@ -1365,7 +1365,7 @@ form label {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
 }
 #fh5co-started .fh5co-heading h2 {
   color: #fff;
@@ -1933,7 +1933,7 @@ form label {
 /* styles for iPhone 6/7/8 plus */
 @media only screen and (max-width: 420px) {
   .btn-see-detail {
-    margin-top: 50px;
+    margin-top: 50px !important;
   }
 
   /* hello sections */

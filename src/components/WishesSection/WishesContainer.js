@@ -4,6 +4,8 @@ import WishesItem from './WishesItem';
 import { wishlist } from './wishlist-data';
 import { styOwl } from './styles';
 
+const INTERVAL_SLIDE = 10000;
+
 function WishesContainer() {
   const [active, setActive] = useState(0);
   const [pauseSlide, setPauseSlide] = useState(false);
@@ -14,7 +16,7 @@ function WishesContainer() {
 
     setTimeout(() => {
       setPauseSlide(false);
-    }, 5000);
+    }, INTERVAL_SLIDE);
   };
 
   const handleSetNext = useCallback(() => {
@@ -49,7 +51,7 @@ function WishesContainer() {
       } else {
         clearInterval(interval);
       }
-    }, 5000);
+    }, INTERVAL_SLIDE);
 
     return () => clearInterval(interval);
   }, [handleSetNext, pauseSlide]);

@@ -1,8 +1,10 @@
 import React from 'react';
 import { string, bool } from 'prop-types';
-import { styWrapper } from './styles';
+import { styWrapper, styFlex } from './styles';
 
 function ConfirmationSection({ isAnonymGuest, guestName }) {
+  const handleClick = () => {};
+
   if (isAnonymGuest) return null;
 
   return (
@@ -16,6 +18,13 @@ function ConfirmationSection({ isAnonymGuest, guestName }) {
               Atas kehadiran & do'a restu saudara/i, <br /> kami ucapkan teima kasih. Wassalamualaikum Warahmatullahi
               Wabarakatuh.
             </p>
+          </div>
+        </div>
+        <div className="row" css={styFlex}>
+          <div className="col-md-3">
+            <button className="btn btn-default btn-block" onClick={handleClick}>
+              Lihat E-Ticket
+            </button>
           </div>
         </div>
       </div>

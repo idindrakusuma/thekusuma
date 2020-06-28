@@ -36,7 +36,7 @@ function Home({ location }) {
       <WishesSection />
       <ConfirmationSection guestName={firstName} isAnonymGuest={isAnonymGuest} />
       <FooterSection isAnonymGuest={isAnonymGuest} />
-      {/* <FloatingMusic /> */}
+      <FloatingMusic />
     </MainLayout>
   );
 }

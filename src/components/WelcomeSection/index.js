@@ -51,11 +51,9 @@ function WelcomeSection({ location, guestName, isAnonymGuest }) {
       <Fragment>
         {renderGuestSection()}
         {(!isMobileView || isAnonymGuest) && (
-          <div className="btn-see-detail">
-            <button onClick={handleShowDetail} css={styButtonDetail} className="btn btn-default btn-sm">
-              Lihat Detail Acara
-            </button>
-          </div>
+          <button onClick={handleShowDetail} css={styButtonDetail} className="btn btn-default btn-sm btn-see-detail">
+            Lihat Detail Acara
+          </button>
         )}
       </Fragment>
     );
