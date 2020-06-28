@@ -1,16 +1,12 @@
-import React, { Fragment, useState, useEffect } from 'react';
-
-import isMobileDevice from '@helpers/isMobileDevice';
+import React, { Fragment, useState } from 'react';
 import IconMusic from '@assets/images/music-icon.png';
 import IconMusicStop from '@assets/images/music-stop-icon.png';
 import MusicBacksound from '@assets/music/lagu-pernikahan-impian.mp3';
 
-import Modal from './Modal';
 import { styMusicFloating } from './styles';
 
 function FloatingMusic() {
   const [play, setPlay] = useState(true);
-  const [showModal, setShowModal] = useState(false);
 
   const toggleMusic = () => {
     const myAudio = document.getElementById('myAudio');
@@ -26,23 +22,6 @@ function FloatingMusic() {
 
     setPlay(!play);
   };
-
-  const handleClickModalAction = () => {
-    const myAudio = document.getElementById('myAudio');
-    myAudio.play();
-
-    setPlay(true);
-    setShowModal(false);
-  };
-
-  /**
-   * side effect  to show modal if mobile device
-   */
-  useEffect(() => {
-    if (isMobileDevice()) {
-      setShowModal(true);
-    }
-  }, []);
 
   return (
     <Fragment>
@@ -61,7 +40,6 @@ function FloatingMusic() {
           />
         </div>
       </div>
-      <Modal isShow={showModal} onClickAction={handleClickModalAction} />
     </Fragment>
   );
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, Fragment } from 'react';
 import { object } from 'prop-types';
 import getQueryValue from '@helpers/getQueryValue';
 /**
@@ -20,22 +20,39 @@ function Home({ location }) {
   const guestName = decodeURIComponent(getQueryValue(location, 'to') || '');
   const firstName = guestName.replace(/ .*/, '');
   const isAnonymGuest = guestName === '';
-  /**
-   * @TODO
-   * should be showing error message when name of guest is empty!
-   */
+
+  const [showDetailContent, setShowDetailContent] = useState(false);
+
+  const handleClickDetail = () => {
+    setShowDetailContent(true);
+  };
+
+  const renderDetailContent = () => {
+    if (!showDetailContent) return null;
+
+    return (
+      <Fragment>
+        <HelloSection guestName={firstName} />
+        <WeddingSection />
+        <LocationSection />
+        <StorySection />
+        <PhotoSection />
+        <WishesSection />
+        <ConfirmationSection guestName={firstName} isAnonymGuest={isAnonymGuest} />
+        <FooterSection isAnonymGuest={isAnonymGuest} />
+      </Fragment>
+    );
+  };
 
   return (
     <MainLayout>
-      <WelcomeSection location={location} guestName={guestName} isAnonymGuest={isAnonymGuest} />
-      <HelloSection guestName={firstName} />
-      <WeddingSection />
-      <LocationSection />
-      <StorySection />
-      <PhotoSection />
-      <WishesSection />
-      <ConfirmationSection guestName={firstName} isAnonymGuest={isAnonymGuest} />
-      <FooterSection isAnonymGuest={isAnonymGuest} />
+      <WelcomeSection
+        location={location}
+        guestName={guestName}
+        isAnonymGuest={isAnonymGuest}
+        onClickDetail={handleClickDetail}
+      />
+      {renderDetailContent()}
       <FloatingMusic />
     </MainLayout>
   );

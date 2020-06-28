@@ -1,23 +1,38 @@
-import React, { Fragment, useState, useEffect } from 'react';
-import { object, string, bool } from 'prop-types';
+import React, { Fragment, useState } from 'react';
+import { object, string, bool, func } from 'prop-types';
 
-import isMobileDevice from '@helpers/isMobileDevice';
 import WeddingImg from '@assets/images/wedding-logo.png';
 import { GOOGLE_CALENDAR_LINK } from '@/constants';
 
 import CountContainer from './CountContainer';
 import { styWrapper, styHero, styBackground, styButtonDetail, styButton } from './styles';
 
-function WelcomeSection({ location, guestName, isAnonymGuest }) {
-  const [isMobileView, setIsMobileView] = useState(false);
+function WelcomeSection({ location, guestName, isAnonymGuest, onClickDetail }) {
+  const [loading, setLoading] = useState(false);
+  const [alreadyDownloadData, setAlreadyDownloadData] = useState(false);
+
+  const handleScrollTo = () => {
+    /** scroll into detail view */
+    const element = document.getElementById('fh5co-couple');
+    element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+  };
 
   const handleShowDetail = () => {
     const myAudio = document.getElementById('myAudio');
-    const element = document.getElementById('fh5co-couple');
     myAudio.play();
+    onClickDetail();
 
-    /** scroll into detail view */
-    element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+    if (!alreadyDownloadData) {
+      setLoading(true);
+
+      setTimeout(() => {
+        setLoading(false);
+        setAlreadyDownloadData(true);
+        handleScrollTo();
+      }, 3000);
+    } else {
+      handleScrollTo();
+    }
   };
 
   const renderGuestSection = () => {
@@ -40,21 +55,13 @@ function WelcomeSection({ location, guestName, isAnonymGuest }) {
     );
   };
 
-  useEffect(() => {
-    if (isMobileDevice()) {
-      setIsMobileView(true);
-    }
-  }, []);
-
   const renderGuest = () => {
     return (
       <Fragment>
         {renderGuestSection()}
-        {(!isMobileView || isAnonymGuest) && (
-          <button onClick={handleShowDetail} css={styButtonDetail} className="btn btn-default btn-sm btn-see-detail">
-            Lihat Detail Acara
-          </button>
-        )}
+        <button onClick={handleShowDetail} css={styButtonDetail} className="btn btn-default btn-sm">
+          {loading ? `Mendownload data...` : 'Lihat Detail Acara'}
+        </button>
       </Fragment>
     );
   };
@@ -89,6 +96,7 @@ WelcomeSection.propTypes = {
   guestName: string.isRequired,
   isAnonymGuest: bool.isRequired,
   location: object.isRequired,
+  onClickDetail: func.isRequired,
 };
 
 export default WelcomeSection;
