@@ -5,7 +5,10 @@ import WeddingImg from '@assets/images/wedding-logo.png';
 import { GOOGLE_CALENDAR_LINK } from '@/constants';
 
 import CountContainer from './CountContainer';
-import { styWrapper, styHero, styBackground, styButtonDetail, styButton } from './styles';
+import ScrollToDown from './ScrollToDown';
+import { styWrapper, styHero, styBackground, styButton } from './styles';
+
+const DELAY_TIME = 1500;
 
 function WelcomeSection({ location, guestName, isAnonymGuest, onClickDetail }) {
   const [loading, setLoading] = useState(false);
@@ -18,6 +21,8 @@ function WelcomeSection({ location, guestName, isAnonymGuest, onClickDetail }) {
   };
 
   const handleShowDetail = () => {
+    if (loading) return undefined;
+
     const myAudio = document.getElementById('myAudio');
     myAudio.play();
     onClickDetail();
@@ -29,7 +34,7 @@ function WelcomeSection({ location, guestName, isAnonymGuest, onClickDetail }) {
         setLoading(false);
         setAlreadyDownloadData(true);
         handleScrollTo();
-      }, 3000);
+      }, DELAY_TIME);
     } else {
       handleScrollTo();
     }
@@ -56,14 +61,7 @@ function WelcomeSection({ location, guestName, isAnonymGuest, onClickDetail }) {
   };
 
   const renderGuest = () => {
-    return (
-      <Fragment>
-        {renderGuestSection()}
-        <button onClick={handleShowDetail} css={styButtonDetail} className="btn btn-default btn-sm">
-          {loading ? `Mendownload data...` : 'Lihat Detail Acara'}
-        </button>
-      </Fragment>
-    );
+    return <Fragment>{renderGuestSection()}</Fragment>;
   };
 
   return (
@@ -85,6 +83,9 @@ function WelcomeSection({ location, guestName, isAnonymGuest, onClickDetail }) {
               <CountContainer />
               {renderGuest()}
             </div>
+          </div>
+          <div className="row">
+            <ScrollToDown loading={loading} onClick={handleShowDetail} />
           </div>
         </div>
       </header>
