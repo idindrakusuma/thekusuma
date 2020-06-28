@@ -43,6 +43,13 @@ export const styScrollWrapper = css`
     .text {
       animation: ${upAndDownAnimation} 1s infinite alternate;
     }
+
+    @media screen and (max-width: 360px) {
+      .text {
+        bottom: 20px;
+        font-size: 12px;
+      }
+    }
   }
 
   .scroll__icon {
@@ -90,6 +97,12 @@ export const styScrollWrapper = css`
 
     &button:hover {
       opacity: 0.5;
+    }
+
+    @media screen and (max-width: 360px) {
+      .button {
+        bottom: 20px;
+      }
     }
   }
 `;
@@ -210,12 +223,7 @@ export const styWrapperCount = css`
     margin: 20px 0 0 0;
   }
 
-  @media screen and (max-width: 330px) {
-    width: 90px;
-    height: 90px;
-  }
-
-  @media screen and (max-width: 500px) and (min-width: 401px) {
+  @media screen and (max-width: 500px) {
     width: 75px;
     height: 75px;
     margin: 4px;
@@ -223,6 +231,21 @@ export const styWrapperCount = css`
 
     h3 {
       font-size: 24px;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    width: 55px;
+    height: 55px;
+
+    h3 {
+      margin-top: 12px;
+      margin-bottom: -4px;
+      font-size: 16px;
+    }
+
+    span {
+      font-size: 10px;
     }
   }
 `;

@@ -47,21 +47,8 @@ function WelcomeSection({ location, guestName, isAnonymGuest, onClickDetail }) {
       <Fragment>
         <h2 className="to-dearest">To our Dearest</h2>
         <h2 className="to-dearest-name">{guestName}</h2>
-        <a
-          href={GOOGLE_CALENDAR_LINK}
-          css={styButton}
-          className="btn btn-default btn-sm"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Tambahkan ke Kalender
-        </a>
       </Fragment>
     );
-  };
-
-  const renderGuest = () => {
-    return <Fragment>{renderGuestSection()}</Fragment>;
   };
 
   return (
@@ -81,7 +68,7 @@ function WelcomeSection({ location, guestName, isAnonymGuest, onClickDetail }) {
               <h4 className="sub-title">The Wedding of</h4>
               <h1 className="title">Dinda &amp; Indra</h1>
               <CountContainer />
-              {renderGuest()}
+              {renderGuestSection()}
             </div>
           </div>
           <div className="row">
