@@ -4,6 +4,8 @@ export const styWrapper = css`
   .sub-title {
     color: #828282;
     font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 20px;
   }
 
   p {
