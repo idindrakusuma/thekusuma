@@ -22,8 +22,13 @@ function WelcomeSection({ location, guestName, isAnonymGuest, onClickDetail }) {
   const handleShowDetail = () => {
     if (loading) return undefined;
 
-    const myAudio = document.getElementById('myAudio');
-    myAudio.play();
+    try {
+      const myAudio = document.getElementById('myAudio');
+      myAudio.play();
+    } catch {
+      console.error('FAILED_TO_PLAY_MUSIC');
+    }
+
     onClickDetail();
 
     if (!alreadyDownloadData) {

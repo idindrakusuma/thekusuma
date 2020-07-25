@@ -4,8 +4,18 @@ import 'react-image-gallery/styles/css/image-gallery.css';
 import { photos } from './photo-data';
 
 function PhotoSection() {
-  const renderImageGalerry = () => {
-    return <ImageGallery items={photos} showBullets={false} />;
+  const renderYoutubeVideo = () => {
+    return (
+      <iframe
+        title="Pre-Wedding Dinda & Indra"
+        width="100%"
+        height="360px"
+        src="https://www.youtube.com/embed/75w39OY7N-k"
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    );
   };
 
   return (
@@ -24,7 +34,12 @@ function PhotoSection() {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-10 col-md-offset-1">{renderImageGalerry()}</div>
+            <div className="col-md-10 col-md-offset-1">{renderYoutubeVideo()}</div>
+          </div>
+          <div className="row">
+            <div className="col-md-10 col-md-offset-1">
+              <ImageGallery items={photos} showBullets={false} />;
+            </div>
           </div>
         </div>
       </div>
