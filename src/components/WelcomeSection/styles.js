@@ -170,7 +170,8 @@ export const styWrapper = css`
 
   h2 {
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
     line-height: 1.5;
     margin-bottom: 30px;
   }
@@ -187,7 +188,9 @@ export const styWrapper = css`
   }
 
   .to-dearest {
-    margin-bottom: 12px;
+    font-size: 16px;
+    color: #f1f1f1b3;
+    margin-bottom: 8px;
   }
 
   .to-dearest-name {
@@ -265,4 +268,15 @@ export const styWrapperCount = css`
 
 export const styMargin = (px) => css`
   margin: ${px};
+`;
+
+export const styButtonWrapper = css`
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    background: #f14e95;
+    color: #fff;
+    border: none;
+  }
 `;

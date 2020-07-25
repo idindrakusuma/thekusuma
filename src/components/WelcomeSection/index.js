@@ -1,15 +1,16 @@
 import React, { Fragment, useState } from 'react';
 import { object, string, bool, func } from 'prop-types';
+import { Link } from 'gatsby';
 
 import WeddingImg from '@assets/images/wedding-logo.png';
 
 import CountContainer from './CountContainer';
 import ScrollToDown from './ScrollToDown';
-import { styWrapper, styHero, styBackground } from './styles';
+import { styWrapper, styHero, styBackground, styButtonWrapper } from './styles';
 
 const DELAY_TIME = 1500;
 
-function WelcomeSection({ location, guestName, isAnonymGuest, onClickDetail }) {
+function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, onClickDetail }) {
   const [loading, setLoading] = useState(false);
   const [alreadyDownloadData, setAlreadyDownloadData] = useState(false);
 
@@ -49,7 +50,7 @@ function WelcomeSection({ location, guestName, isAnonymGuest, onClickDetail }) {
 
     return (
       <Fragment>
-        <h2 className="to-dearest">To our Dearest</h2>
+        <h3 className="to-dearest">To our Dearest</h3>
         <h2 className="to-dearest-name">{guestName}</h2>
       </Fragment>
     );
@@ -73,6 +74,15 @@ function WelcomeSection({ location, guestName, isAnonymGuest, onClickDetail }) {
               <h1 className="title">Dinda &amp; Indra</h1>
               <CountContainer />
               {renderGuestSection()}
+              {isInvitation && (
+                <div className="row" css={styButtonWrapper}>
+                  <div className="col-md-3">
+                    <Link to="/e-ticket">
+                      <button className="btn btn-default btn-block">Lihat e-Ticket</button>
+                    </Link>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
           <div className="row">
@@ -86,6 +96,7 @@ function WelcomeSection({ location, guestName, isAnonymGuest, onClickDetail }) {
 
 WelcomeSection.propTypes = {
   guestName: string.isRequired,
+  isInvitation: bool.isRequired,
   isAnonymGuest: bool.isRequired,
   location: object.isRequired,
   onClickDetail: func.isRequired,

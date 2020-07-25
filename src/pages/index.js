@@ -18,6 +18,7 @@ import FloatingMusic from '@components/FloatingMusic/Loadable';
 
 function Home({ location }) {
   const guestName = decodeURIComponent(getQueryValue(location, 'to') || '');
+  const isInvitation = getQueryValue(location, 'type') === 'invitation';
   const firstName = guestName.replace(/ .*/, '');
   const isAnonymGuest = guestName === '';
 
@@ -33,8 +34,8 @@ function Home({ location }) {
     return (
       <Fragment>
         <HelloSection guestName={firstName} />
-        <WeddingSection />
-        <LocationSection />
+        {isInvitation && <WeddingSection />}
+        {isInvitation && <LocationSection />}
         <StorySection />
         <PhotoSection />
         <WishesSection />
@@ -47,13 +48,14 @@ function Home({ location }) {
   return (
     <MainLayout>
       <WelcomeSection
-        location={location}
         guestName={guestName}
         isAnonymGuest={isAnonymGuest}
+        isInvitation={isInvitation}
+        location={location}
         onClickDetail={handleClickDetail}
       />
       {renderDetailContent()}
-      <FloatingMusic />
+      {/* <FloatingMusic /> */}
     </MainLayout>
   );
 }

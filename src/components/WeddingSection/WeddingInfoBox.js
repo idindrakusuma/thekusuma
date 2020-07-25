@@ -19,7 +19,7 @@ function WeddingInfoBox({ title, date, time, description, mobileDescription }) {
           <i className="icon-location-pin"></i>
           <span dangerouslySetInnerHTML={{ __html: mobileDescription }} />
         </div>
-        <p className="wedding-box__desktop" dangerouslySetInnerHTML={{ __html: description }} />
+        <p className="wedding-box__desktop">{`Lokasi: ${description}`}</p>
       </div>
     </div>
   );
