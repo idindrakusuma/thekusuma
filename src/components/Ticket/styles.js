@@ -1,5 +1,91 @@
 import { css } from '@emotion/core';
 
+export const styWrapper = css`
+  @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+  .float-left {
+    float: left;
+    width: 300px; // or 33% for equal width independent of parent width
+  }
+
+  .container {
+    margin: 30px auto;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(202, 202, 204);
+    background-color: ;
+    border-radius: 2px;
+  }
+
+  .ticket {
+    display: flex;
+
+    #qrcode {
+      justify-content: center;
+      align-content: center;
+      margin: 12px auto;
+    }
+  }
+
+  .details {
+    padding: 26px;
+    background: white;
+    border-top: 1px dashed #c3c3c3;
+  }
+
+  .tinfo {
+    font-size: 10px;
+    font-weight: 300;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 16px 0 0 0;
+  }
+
+  .tdata {
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+    margin: 0;
+  }
+
+  .name {
+    font-size: 1.3em;
+    font-weight: 500;
+  }
+
+  .masinfo {
+    display: block;
+  }
+  .left,
+  .right {
+    width: 49%;
+    display: inline-table;
+  }
+
+  .nesp {
+    letter-spacing: 0px;
+  }
+
+  .btn {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 30px;
+    transition: 0.5s;
+    padding: 8px 20px;
+  }
+
+  .primary {
+    background: #f14e95;
+    color: #fff;
+    border: none;
+  }
+`;
+
 export const styTicket = css`
   display: flex;
   justify-content: center;

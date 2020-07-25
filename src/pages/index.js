@@ -55,7 +55,7 @@ function Home({ location }) {
         onClickDetail={handleClickDetail}
       />
       {renderDetailContent()}
-      {/* <FloatingMusic /> */}
+      <FloatingMusic />
     </MainLayout>
   );
 }
