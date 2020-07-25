@@ -2,11 +2,10 @@ import React, { Fragment, useState } from 'react';
 import { object, string, bool, func } from 'prop-types';
 
 import WeddingImg from '@assets/images/wedding-logo.png';
-import { GOOGLE_CALENDAR_LINK } from '@/constants';
 
 import CountContainer from './CountContainer';
 import ScrollToDown from './ScrollToDown';
-import { styWrapper, styHero, styBackground, styButton } from './styles';
+import { styWrapper, styHero, styBackground } from './styles';
 
 const DELAY_TIME = 1500;
 

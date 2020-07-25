@@ -44,9 +44,16 @@ export const styScrollWrapper = css`
       animation: ${upAndDownAnimation} 1s infinite alternate;
     }
 
+    @media screen and (max-width: 414px) {
+      .text {
+        bottom: 80px;
+        font-size: 12px;
+      }
+    }
+
     @media screen and (max-width: 360px) {
       .text {
-        bottom: 20px;
+        bottom: 60px;
         font-size: 12px;
       }
     }
@@ -99,9 +106,15 @@ export const styScrollWrapper = css`
       opacity: 0.5;
     }
 
+    @media screen and (max-width: 414px) {
+      .button {
+        bottom: 80px;
+      }
+    }
+
     @media screen and (max-width: 360px) {
       .button {
-        bottom: 20px;
+        bottom: 65px;
       }
     }
   }
@@ -140,7 +153,7 @@ export const styBackground = css`
 
 export const styWrapper = css`
   color: #fff;
-  margin-top: -48px;
+  margin-top: -8em;
 
   img {
     max-width: 80px;
@@ -252,21 +265,4 @@ export const styWrapperCount = css`
 
 export const styMargin = (px) => css`
   margin: ${px};
-`;
-
-export const styButton = css`
-  margin: 4px 8px;
-  color: #f14e95;
-
-  &:hover {
-    background: rgba(241, 78, 149, 0.8);
-    color: #fff;
-    border-color: rgba(241, 78, 149, 0.8);
-  }
-`;
-
-export const styButtonDetail = css`
-  animation: pulse 1s ease infinite;
-
-  ${styButton}
 `;
