@@ -7,8 +7,7 @@ export const styWrapper = css`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    height: calc(100vh - 4px);
+    min-height: calc(100vh - 18px);
     padding: 0 20px;
   }
 `;

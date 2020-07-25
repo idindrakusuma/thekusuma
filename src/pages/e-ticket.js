@@ -41,15 +41,16 @@ function ETicket() {
 
     return (
       <>
-        <div>
-          <h2 className="sub-title-ticket">Penukaran e-Tiket Pernikahan</h2>
+        <div style={{ marginTop: '-100px' }}>
+          <h2 className="sub-title-ticket">Penukaran e-Ticket Pernikahan</h2>
           <h1 className="title">Dinda & Indra</h1>
         </div>
         <div className="input-ticket">
           <input
             value={value}
             disabled={loading}
-            placeholder={`${loading ? 'Menyiapkan data...' : 'Masukan kode undangan..'}`}
+            type="text"
+            placeholder={`${loading ? 'Tunggu sebentar..' : 'Masukan kode undangan..'}`}
             onChange={handleSetValue}
             onKeyDown={handleKeyDown}
           />

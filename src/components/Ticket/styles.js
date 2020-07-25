@@ -3,11 +3,6 @@ import { css } from '@emotion/core';
 export const styWrapper = css`
   @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
-  .float-left {
-    float: left;
-    width: 300px; // or 33% for equal width independent of parent width
-  }
-
   .container {
     margin: 30px auto;
     overflow: hidden;
@@ -27,8 +22,7 @@ export const styWrapper = css`
   }
 
   .details {
-    padding: 26px;
-    background: white;
+    padding: 16px 0;
     border-top: 1px dashed #c3c3c3;
   }
 
@@ -48,6 +42,10 @@ export const styWrapper = css`
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.5px;
     margin: 0;
+  }
+
+  .additional {
+    font-size: 10px;
   }
 
   .name {
@@ -90,8 +88,7 @@ export const styTicket = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  height: calc(100vh - 4px);
+  min-height: calc(100vh - 18px);
   padding: 0 20px;
 
   .homepage {
@@ -135,6 +132,10 @@ export const styTicket = css`
       padding: 10px 30px 10px 10px;
       background: transparent;
       border: 0.5px solid rgba(0, 0, 0, 0.3);
+    }
+
+    input[type='text']:disabled {
+      background: #dddddd;
     }
   }
 `;

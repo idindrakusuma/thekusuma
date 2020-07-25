@@ -455,9 +455,14 @@ figure {
 }
 #fh5co-counter .event-wrap .event-col,
 #fh5co-event .event-wrap .event-col {
-  width: 50%;
-  float: left;
-  margin-bottom: 30px;
+  display: flex !important;
+  width: 100% !important;
+  margin-bottom: 12px !important;
+}
+
+.event-col > span {
+  margin-left: 8px !important;
+  text-align: left;
 }
 
 #fh5co-counter {
@@ -1915,10 +1920,6 @@ form label {
   border-top: 4px solid rgba(143, 152, 159, 0.17);
 }
 
-.wedding-box__mobile {
-  display: none;
-}
-
 @media only screen and (max-width: 400px) {
   .sub-title {
     font-size: 16px !important;
@@ -1965,16 +1966,6 @@ form label {
   .sub-title__wedding {
     font-size: 14px !important;
     text-transform: none !important;
-  }
-
-  .event-col {
-    display: flex !important;
-    width: 100% !important;
-    margin-bottom: 12px !important;
-  }
-
-  .event-col > span {
-    margin-left: 8px !important;
   }
 
   .wedding-box__mobile {
