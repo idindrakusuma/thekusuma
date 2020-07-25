@@ -26,7 +26,7 @@ function CovidSection() {
             <SectionBox icon={IconMask} text="Wajib menggunakan masker dan dilakukan pengecekan suhu." />
             <SectionBox icon={IconSocialDistancing} text="Pembatasan jarak dan pemabatasan jumlah tamu." />
             <SectionBox icon={IconGuest} text="Satu undangan hanya untuk 2 orang tamu." />
-            <SectionBox icon={IconDoctor} text="Dipantau tim dokter & disediakan hand sanytizer." />
+            <SectionBox icon={IconDoctor} text="Dipantau tim dokter & disediakan hand sanitizer." />
             <SectionBox icon={IconQRcode} text="Wajib membawa QRCode untuk mengurangi kontak fisik melalui pena." />
             <SectionBox icon={IconClock} text="Wajib hadir sesuai sesuai waktu yang tertera di Undangan." />
           </div>
