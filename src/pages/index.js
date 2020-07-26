@@ -35,7 +35,7 @@ function Home({ location }) {
     return (
       <Fragment>
         <HelloSection guestName={firstName} />
-        {isInvitation && <WeddingSection />}
+        <WeddingSection isAnonymGuest={isAnonymGuest} />
         {isInvitation && <CovidSection />}
         {isInvitation && <LocationSection />}
         <StorySection />

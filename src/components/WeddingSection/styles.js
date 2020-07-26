@@ -35,3 +35,18 @@ export const styWrapper = css`
     }
   }
 `;
+
+export const styButtonWrapper = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 2s ease infinite;
+  margin-top: 32px;
+  background: #f14e95;
+  color: #fff;
+  border: none;
+
+  i {
+    margin-right: 4px;
+  }
+`;

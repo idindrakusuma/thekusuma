@@ -1,13 +1,40 @@
 import React, { Fragment } from 'react';
+import { bool } from 'prop-types';
 
 import WeddingInfoBox from './WeddingInfoBox';
-import { styWrapper } from './styles';
+import { styWrapper, styButtonWrapper } from './styles';
 
-function WeddingSection() {
+function WeddingSection({ isAnonymGuest }) {
+  const renderGuestInfo = () => {
+    return (
+      <Fragment>
+        <div className="col-md-8 col-md-offset-4">
+          <WeddingInfoBox
+            title="Akad Nikah"
+            time="08.00 WIB (Live di Instagram)"
+            date="Sabtu, 03 Oktober 2020"
+            description="HARRIS Hotel Sentraland, Semarang"
+            mobileDescription="HARRIS Hotel Sentraland, Semarang"
+          />
+        </div>
+        <div className="row">
+          <div className="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
+            <a href="https://www.instagram.com/dindadipoyono/" target="_blank" rel="noreferrer">
+              <button className="btn btn-default btn-block" css={styButtonWrapper}>
+                <i className="icon-instagram" />
+                LIVE at @dindadipoyono
+              </button>
+            </a>
+          </div>
+        </div>
+      </Fragment>
+    );
+  };
+
   return (
     <Fragment>
       <div id="fh5co-event" css={styWrapper}>
-        <div className="overlay"></div>
+        <div className="overlay" />
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -17,22 +44,25 @@ function WeddingSection() {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-10 col-md-offset-1">
-              <WeddingInfoBox
-                title="Akad Nikah"
-                time="Akan dilaksanakan pagi hari "
-                date="Sabtu, 03 Oktober 2020"
-                description="HARRIS Hotel Sentraland, Semarang"
-                mobileDescription="HARRIS Hotel Sentraland, Semarang"
-              />
-              <WeddingInfoBox
-                title="Syukuran Pernikahan"
-                time="Sesuai jadwal undangan di e-ticket "
-                date="Sabtu, 03 Oktober 2020"
-                description="HARRIS Hotel Sentraland, Semarang"
-                mobileDescription="HARRIS Hotel Sentraland, Semarang"
-              />
-            </div>
+            {renderGuestInfo()}
+            {!isAnonymGuest && (
+              <div className="col-md-10 col-md-offset-1">
+                <WeddingInfoBox
+                  title="Akad Nikah"
+                  time="Akan dilaksanakan pagi hari "
+                  date="Sabtu, 03 Oktober 2020"
+                  description="HARRIS Hotel Sentraland, Semarang"
+                  mobileDescription="HARRIS Hotel Sentraland, Semarang"
+                />
+                <WeddingInfoBox
+                  title="Syukuran Pernikahan"
+                  time="Sesuai jadwal undangan di e-ticket "
+                  date="Sabtu, 03 Oktober 2020"
+                  description="HARRIS Hotel Sentraland, Semarang"
+                  mobileDescription="HARRIS Hotel Sentraland, Semarang"
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -40,4 +70,8 @@ function WeddingSection() {
   );
 }
 
-export default WeddingSection;
+WeddingSection.propTypes = {
+  isAnonymGuest: bool.isRequired,
+};
+
+export default React.memo(WeddingSection);
