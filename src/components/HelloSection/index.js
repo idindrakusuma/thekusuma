@@ -19,7 +19,8 @@ function HelloSection({ guestName }) {
               <h3 className="sub-title hs">{finalSubtitle}</h3>
               <p className="info">
                 Dengan memohon Rahmat dan Ridho Illahi, teriring niat menjalankan Sunnah Rasulullah ﷺ untuk membentuk
-                rumah tangga yang Sakinah, Mawaddah wa Rahmah, kami mohon do'{finalSubtitle}
+                rumah tangga yang Sakinah, Mawaddah wa Rahmah, kami mohon do'a agar senantiasa diberikan kelancaran dan
+                keberkahan.
               </p>
             </div>
           </div>
