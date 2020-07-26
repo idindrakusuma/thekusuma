@@ -20,14 +20,14 @@ function WeddingSection() {
             <div className="col-md-10 col-md-offset-1">
               <WeddingInfoBox
                 title="Akad Nikah"
-                time="Akan Dilaksanakan Pagi Hari"
+                time="Akan dilaksanakan pagi hari "
                 date="Sabtu, 03 Oktober 2020"
                 description="HARRIS Hotel Sentraland, Semarang"
                 mobileDescription="HARRIS Hotel Sentraland, Semarang"
               />
               <WeddingInfoBox
                 title="Syukuran Pernikahan"
-                time="Sesuai Jadwal Undangan"
+                time="Sesuai jadwal undangan di e-ticket "
                 date="Sabtu, 03 Oktober 2020"
                 description="HARRIS Hotel Sentraland, Semarang"
                 mobileDescription="HARRIS Hotel Sentraland, Semarang"

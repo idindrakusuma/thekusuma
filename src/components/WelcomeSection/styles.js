@@ -14,7 +14,7 @@ const radarAnimation = keyframes`
     opacity: 1;
   }
   60% {
-    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    box-shadow: 0 0 0 30px rgba(255,255,255,.1);
     opacity: 0;
   }
   100% {
