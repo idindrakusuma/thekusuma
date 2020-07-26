@@ -1,7 +1,7 @@
 import React from 'react';
 import { string } from 'prop-types';
 
-function WeddingInfoBox({ title, date, time, description, mobileDescription }) {
+function WeddingInfoBox({ title, date, time, description }) {
   return (
     <div className="col-md-6 col-sm-6 text-center">
       <div className="event-wrap">
@@ -14,12 +14,10 @@ function WeddingInfoBox({ title, date, time, description, mobileDescription }) {
           <i className="icon-calendar"></i>
           <span>{date}</span>
         </div>
-
-        <div className="wedding-box__mobile">
+        <div className="event-col">
           <i className="icon-location-pin"></i>
-          <span dangerouslySetInnerHTML={{ __html: mobileDescription }} />
+          <span>{description}</span>
         </div>
-        <p className="wedding-box__desktop" dangerouslySetInnerHTML={{ __html: description }} />
       </div>
     </div>
   );
@@ -29,7 +27,6 @@ WeddingInfoBox.propTypes = {
   title: string.isRequired,
   date: string.isRequired,
   time: string.isRequired,
-  mobileDescription: string.isRequired,
   description: string.isRequired,
 };
 

@@ -14,7 +14,7 @@ const radarAnimation = keyframes`
     opacity: 1;
   }
   60% {
-    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    box-shadow: 0 0 0 30px rgba(255,255,255,.1);
     opacity: 0;
   }
   100% {
@@ -44,9 +44,16 @@ export const styScrollWrapper = css`
       animation: ${upAndDownAnimation} 1s infinite alternate;
     }
 
+    @media screen and (max-width: 414px) {
+      .text {
+        bottom: 80px;
+        font-size: 12px;
+      }
+    }
+
     @media screen and (max-width: 360px) {
       .text {
-        bottom: 20px;
+        bottom: 60px;
         font-size: 12px;
       }
     }
@@ -99,9 +106,15 @@ export const styScrollWrapper = css`
       opacity: 0.5;
     }
 
+    @media screen and (max-width: 414px) {
+      .button {
+        bottom: 80px;
+      }
+    }
+
     @media screen and (max-width: 360px) {
       .button {
-        bottom: 20px;
+        bottom: 65px;
       }
     }
   }
@@ -140,7 +153,7 @@ export const styBackground = css`
 
 export const styWrapper = css`
   color: #fff;
-  margin-top: -48px;
+  margin-top: -8em;
 
   img {
     max-width: 80px;
@@ -157,7 +170,8 @@ export const styWrapper = css`
 
   h2 {
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
     line-height: 1.5;
     margin-bottom: 30px;
   }
@@ -174,7 +188,9 @@ export const styWrapper = css`
   }
 
   .to-dearest {
-    margin-bottom: 12px;
+    font-size: 16px;
+    color: #f1f1f1b3;
+    margin-bottom: 8px;
   }
 
   .to-dearest-name {
@@ -254,19 +270,13 @@ export const styMargin = (px) => css`
   margin: ${px};
 `;
 
-export const styButton = css`
-  margin: 4px 8px;
-  color: #f14e95;
+export const styButtonWrapper = css`
+  display: flex;
+  justify-content: center;
 
-  &:hover {
-    background: rgba(241, 78, 149, 0.8);
+  .btn {
+    background: #f14e95;
     color: #fff;
-    border-color: rgba(241, 78, 149, 0.8);
+    border: none;
   }
-`;
-
-export const styButtonDetail = css`
-  animation: pulse 1s ease infinite;
-
-  ${styButton}
 `;

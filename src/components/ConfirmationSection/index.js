@@ -1,10 +1,9 @@
 import React from 'react';
 import { string, bool } from 'prop-types';
+import { Link } from 'gatsby';
 import { styWrapper, styFlex } from './styles';
 
 function ConfirmationSection({ isAnonymGuest, guestName }) {
-  const handleClick = () => {};
-
   if (isAnonymGuest) return null;
 
   return (
@@ -22,9 +21,9 @@ function ConfirmationSection({ isAnonymGuest, guestName }) {
         </div>
         <div className="row" css={styFlex}>
           <div className="col-md-3">
-            <button className="btn btn-default btn-block" onClick={handleClick}>
-              Lihat E-Ticket
-            </button>
+            <Link to="e-ticket">
+              <button className="btn btn-default btn-block">Lihat e-Ticket</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -14,10 +14,12 @@ import PhotoSection from '@components/PhotoSection/Loadable';
 import WishesSection from '@components/WishesSection';
 import ConfirmationSection from '@components/ConfirmationSection';
 import FooterSection from '@components/FooterSection';
+import CovidSection from '@components/Covid19';
 import FloatingMusic from '@components/FloatingMusic/Loadable';
 
 function Home({ location }) {
   const guestName = decodeURIComponent(getQueryValue(location, 'to') || '');
+  const isInvitation = getQueryValue(location, 'type') === 'invitation';
   const firstName = guestName.replace(/ .*/, '');
   const isAnonymGuest = guestName === '';
 
@@ -33,8 +35,9 @@ function Home({ location }) {
     return (
       <Fragment>
         <HelloSection guestName={firstName} />
-        <WeddingSection />
-        <LocationSection />
+        {isInvitation && <WeddingSection />}
+        {isInvitation && <CovidSection />}
+        {isInvitation && <LocationSection />}
         <StorySection />
         <PhotoSection />
         <WishesSection />
@@ -47,9 +50,10 @@ function Home({ location }) {
   return (
     <MainLayout>
       <WelcomeSection
-        location={location}
         guestName={guestName}
         isAnonymGuest={isAnonymGuest}
+        isInvitation={isInvitation}
+        location={location}
         onClickDetail={handleClickDetail}
       />
       {renderDetailContent()}

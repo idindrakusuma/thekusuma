@@ -2,13 +2,7 @@ import React, { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
 import { node } from 'prop-types';
 
-/**
- * Local assets
- */
 import Favicon from '@assets/images/dinda-indra.png';
-/**
- * list of 3rd party CSS
- */
 import '@assets/css/icomoon.css';
 import '@assets/css/bootstrap.css';
 import '@assets/css/style.css';
