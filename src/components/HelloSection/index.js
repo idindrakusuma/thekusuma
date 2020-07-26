@@ -7,6 +7,8 @@ import Groom from '@assets/images/p-indra.jpg';
 import { styWrapper } from './styles';
 
 function HelloSection({ guestName }) {
+  const finalSubtitle = guestName ? '03 Oktober 2020, HARRIS Hotel Sentraland, Semarang' : 'Sabtu, 03 Oktober 2020';
+
   return (
     <Fragment>
       <div id="fh5co-couple" css={styWrapper}>
@@ -14,7 +16,7 @@ function HelloSection({ guestName }) {
           <div className="row">
             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
               <h2 className="main-font">Assalamualaikum Wr. Wb</h2>
-              <h3 className="sub-title hs">03 Oktober 2020, HARRIS Hotel Sentraland, Semarang</h3>
+              <h3 className="sub-title hs">{finalSubtitle}</h3>
               <p className="info">
                 Dengan memohon Rahmat dan Ridho Illahi, teriring niat menjalankan Sunnah Rasulullah ﷺ untuk membentuk
                 rumah tangga yang Sakinah, Mawaddah wa Rahmah, kami mohon do'a agar senantiasa diberikan kelancaran dan
@@ -54,6 +56,26 @@ function HelloSection({ guestName }) {
           </div>
         </div>
       </div>
+      {!guestName && (
+        <div id="fh5co-couple" className="fh5co-section-gray" css={styWrapper}>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2 className="main-font">Seputar Covid-19</h2>
+                <p className="info">
+                  Berkaitan dengan kondisi pandemik saat ini, keberlangsungan acara kami mengacu pada pedoman
+                  Kementerian Kesehatan, yaitu memeberlakukan pembatasan jarak dan pembatasan jumlah tamu undangan.
+                </p>
+                <p className="info">
+                  Maka dari itu, dengan segala kerendahan hati, kami mohon maaf jika belum bisa mengundang saudara/i
+                  dihari bahagia kami. Sekiranya do'a dari saudara/i sudah lebih dari cukup bagi kami. Semoga kita semua
+                  selalu dalam lindungan Allah SWT. Aamiin ya rabbal allamiin..
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </Fragment>
   );
 }

@@ -200,6 +200,10 @@ export const styWrapper = css`
     margin: auto auto 30px auto;
   }
 
+  .margin__bottom {
+    margin-bottom: 3em !important;
+  }
+
   a {
     color: #f14e95;
   }

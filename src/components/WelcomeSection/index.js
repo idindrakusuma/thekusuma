@@ -46,7 +46,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, onCl
   };
 
   const renderGuestSection = () => {
-    if (isAnonymGuest) return null;
+    if (isAnonymGuest) return <h2 className="to-dearest-name">Dear Friends,</h2>;
 
     return (
       <Fragment>
@@ -72,7 +72,9 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, onCl
               <img src={WeddingImg} alt="wedding-dinda-indra" />
               <h4 className="sub-title">The Wedding of</h4>
               <h1 className="title">Dinda &amp; Indra</h1>
-              <CountContainer />
+              <div className={isAnonymGuest ? 'margin__bottom' : ''}>
+                <CountContainer />
+              </div>
               {renderGuestSection()}
               {isInvitation && (
                 <div className="row" css={styButtonWrapper}>

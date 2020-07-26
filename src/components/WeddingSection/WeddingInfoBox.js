@@ -14,10 +14,12 @@ function WeddingInfoBox({ title, date, time, description }) {
           <i className="icon-calendar"></i>
           <span>{date}</span>
         </div>
-        <div className="event-col">
-          <i className="icon-location-pin"></i>
-          <span>{description}</span>
-        </div>
+        {description && (
+          <div className="event-col">
+            <i className="icon-location-pin"></i>
+            <span>{description}</span>
+          </div>
+        )}
       </div>
     </div>
   );
