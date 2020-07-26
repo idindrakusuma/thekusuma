@@ -53,10 +53,11 @@ export const styButtonWrapper = css`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+    color: #fff;
+    font-weight: 500px;
+    border-radius: 24px;
     background: #f14e95;
+    padding: 8px 16px;
   }
 
   i {
@@ -65,5 +66,6 @@ export const styButtonWrapper = css`
 
   img {
     max-width: 28px;
+    margin-right: 8px;
   }
 `;

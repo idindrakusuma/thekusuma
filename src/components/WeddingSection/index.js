@@ -19,6 +19,7 @@ function WeddingSection({ isAnonymGuest }) {
               <div css={styButtonWrapper}>
                 <div className="img__wrapper">
                   <img src={IconIg} alt="Live IG" />
+                  <span>@dindadipoyono</span>
                 </div>
               </div>
             </a>
