@@ -13,7 +13,7 @@ function FooterSection({ isAnonymGuest }) {
                 <h2 className="main-font">Terima Kasih</h2>
                 <p className="info">
                   Berdasarkan kondisi saat ini, tanpa mengurangi rasa hormat, diharapkan tetap bisa menjalin silaturahmi
-                  melalui media online, bukan dengan kontak fisik secara langsung. Mohon pengertianya.
+                  melalui media online, bukan dengan kontak fisik secara langsung. Mohon pengertiannya.
                 </p>
                 <p className="info">
                   Atas segala do'a dan restu saudara/i, kami ucapkan terima kasih. <br />

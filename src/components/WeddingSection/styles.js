@@ -26,6 +26,11 @@ export const styWrapper = css`
     }
   }
 
+  .text__live {
+    text-align: center;
+    margin-top: 24px;
+  }
+
   .main-font {
     margin-top: 12px;
 
@@ -41,12 +46,24 @@ export const styButtonWrapper = css`
   justify-content: center;
   align-items: center;
   animation: pulse 2s ease infinite;
-  margin-top: 32px;
-  background: #f14e95;
-  color: #fff;
+  margin-top: -8px;
   border: none;
+
+  .img__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #f14e95;
+  }
 
   i {
     margin-right: 4px;
+  }
+
+  img {
+    max-width: 28px;
   }
 `;

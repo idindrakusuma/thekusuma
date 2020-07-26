@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { bool } from 'prop-types';
 
 import WeddingInfoBox from './WeddingInfoBox';
+import IconIg from './assets/instagram.png';
 import { styWrapper, styButtonWrapper } from './styles';
 
 function WeddingSection({ isAnonymGuest }) {
@@ -9,21 +10,17 @@ function WeddingSection({ isAnonymGuest }) {
     return (
       <Fragment>
         <div className="col-md-8 col-md-offset-4">
-          <WeddingInfoBox
-            title="Akad Nikah"
-            time="08.00 WIB (Live di Instagram)"
-            date="Sabtu, 03 Oktober 2020"
-            description="HARRIS Hotel Sentraland, Semarang"
-            mobileDescription="HARRIS Hotel Sentraland, Semarang"
-          />
+          <WeddingInfoBox title="Akad Nikah" time="08.00 WIB (Live di Instagram)" date="Sabtu, 03 Oktober 2020" />
         </div>
         <div className="row">
-          <div className="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2">
+          <div className="col-md-12">
+            <p className="text__live">Hadir secara virtual melalui siarang langsung instagram: </p>
             <a href="https://www.instagram.com/dindadipoyono/" target="_blank" rel="noreferrer">
-              <button className="btn btn-default btn-block" css={styButtonWrapper}>
-                <i className="icon-instagram" />
-                LIVE at @dindadipoyono
-              </button>
+              <div css={styButtonWrapper}>
+                <div className="img__wrapper">
+                  <img src={IconIg} alt="Live IG" />
+                </div>
+              </div>
             </a>
           </div>
         </div>
@@ -44,7 +41,7 @@ function WeddingSection({ isAnonymGuest }) {
             </div>
           </div>
           <div className="row">
-            {renderGuestInfo()}
+            {isAnonymGuest && renderGuestInfo()}
             {!isAnonymGuest && (
               <div className="col-md-10 col-md-offset-1">
                 <WeddingInfoBox
