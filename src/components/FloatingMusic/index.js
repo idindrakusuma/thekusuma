@@ -6,7 +6,7 @@ import MusicBacksound from '@assets/music/lagu-pernikahan-impian.mp3';
 import { styMusicFloating } from './styles';
 
 function FloatingMusic() {
-  const [play, setPlay] = useState(true);
+  const [play, setPlay] = useState(false);
 
   const toggleMusic = () => {
     const myAudio = document.getElementById('myAudio');
@@ -26,7 +26,7 @@ function FloatingMusic() {
   return (
     <Fragment>
       <div css={styMusicFloating}>
-        <audio id="myAudio" autoPlay loop className="hide">
+        <audio id="myAudio" loop className="hide">
           <source src={MusicBacksound} type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
