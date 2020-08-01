@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import MainLayout from '@components/Layout/Ticket';
+import MainLayout from '@components/Layout';
+import GenerateLink from '@components/GenerateLink';
+import { styWrapper } from '@components/GenerateLink/styles';
 
-function GenerateLink() {
+function GenerateLinkWrapper() {
   return (
     <MainLayout>
-      <div>Generate Link</div>
+      <div css={styWrapper}>{<GenerateLink />}</div>
     </MainLayout>
   );
 }
 
-export default GenerateLink;
+export default GenerateLinkWrapper;

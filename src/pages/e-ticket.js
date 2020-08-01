@@ -65,15 +65,23 @@ function ETicket({ location }) {
           <h2 className="sub-title-ticket">Penukaran e-Ticket Pernikahan</h2>
           <h1 className="title">Dinda & Indra</h1>
         </div>
-        <div className="input-ticket">
-          <input
-            value={value}
-            disabled={loading}
-            type="text"
-            placeholder={`${loading ? 'Tunggu sebentar..' : 'Masukan kode undangan..'}`}
-            onChange={handleSetValue}
-            onKeyDown={handleKeyDown}
-          />
+        <div className="row">
+          <div class="input-group">
+            <input
+              value={value}
+              disabled={loading}
+              onChange={handleSetValue}
+              onKeyDown={handleKeyDown}
+              type="text"
+              class="form-control"
+              placeholder={`${loading ? 'Tunggu sebentar..' : 'Tulis kode undangan..'}`}
+            />
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button" style={{ height: '54px' }}>
+                Cari
+              </button>
+            </span>
+          </div>
         </div>
       </>
     );
