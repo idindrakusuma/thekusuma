@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 
-import MainLayout from '@components/Layout/Ticket';
+import MainLayout from '@components/Layout';
 import Ticket from '@components/Ticket';
 
 import useGuestData from '@/hooks/useGuestData';
 import { styTicket } from '@components/Ticket/styles';
+import getQueryValue from '../helpers/getQueryValue';
 
-function ETicket() {
+function ETicket({ location }) {
+  const codeEticket = getQueryValue(location, 'code') || '';
+  const alreadyChecked = useRef(false);
+
   const [value, setValue] = useState('');
   const [selectedGuest, setSelectedGuest] = useState({});
   const [isShowTicket, setIsShowTicket] = useState(false);
@@ -17,24 +21,40 @@ function ETicket() {
     setValue(e.target.value);
   };
 
-  const handleCheckTicket = () => {
-    const guestCode = value.toUpperCase();
-    const guest = data.find((g) => (g.code || '').toUpperCase() === guestCode);
+  const handleCheckTicket = useCallback(
+    (tempValue) => {
+      const guestCode = (tempValue || value).toUpperCase();
+      const guest = data.find((g) => (g.code || '').toUpperCase() === guestCode);
 
-    if (guest) {
-      setSelectedGuest(guest);
-      setIsShowTicket(true);
-      return;
-    }
+      if (guest) {
+        setSelectedGuest(guest);
+        setIsShowTicket(true);
+        return;
+      }
 
-    alert('Maaf, Data tidak ditemukan. Mohon di cek lagi..');
-  };
+      alert(`Maaf, Kode data ${guestCode} tidak ditemukan. Mohon di cek lagi..`);
+    },
+    [data, value],
+  );
 
   const handleKeyDown = ({ keyCode }) => {
     if (keyCode === 13) {
       handleCheckTicket();
     }
   };
+
+  /**
+   * Effect to autu-check code ticket
+   */
+  useEffect(() => {
+    if (codeEticket !== '' && data.length > 0 && !alreadyChecked.current) {
+      alreadyChecked.current = true;
+      setValue(codeEticket);
+      setTimeout(() => {
+        handleCheckTicket(codeEticket);
+      }, 1000);
+    }
+  }, [codeEticket, data.length, handleCheckTicket, loading]);
 
   const renderTypeContent = () => {
     if (isShowTicket) return <Ticket guest={selectedGuest} onRecheckTicket={() => setIsShowTicket(false)} />;
@@ -45,15 +65,23 @@ function ETicket() {
           <h2 className="sub-title-ticket">Penukaran e-Ticket Pernikahan</h2>
           <h1 className="title">Dinda & Indra</h1>
         </div>
-        <div className="input-ticket">
-          <input
-            value={value}
-            disabled={loading}
-            type="text"
-            placeholder={`${loading ? 'Tunggu sebentar..' : 'Masukan kode undangan..'}`}
-            onChange={handleSetValue}
-            onKeyDown={handleKeyDown}
-          />
+        <div className="row">
+          <div class="input-group">
+            <input
+              value={value}
+              disabled={loading}
+              onChange={handleSetValue}
+              onKeyDown={handleKeyDown}
+              type="text"
+              class="form-control"
+              placeholder={`${loading ? 'Tunggu sebentar..' : 'Tulis kode undangan..'}`}
+            />
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button" style={{ height: '54px' }}>
+                Cari
+              </button>
+            </span>
+          </div>
         </div>
       </>
     );

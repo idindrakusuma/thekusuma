@@ -9,6 +9,7 @@ export const styWrapper = css`
     box-shadow: 0 0 10px rgb(202, 202, 204);
     background-color: ;
     border-radius: 2px;
+    padding: 0 8px;
   }
 
   .ticket {
@@ -22,6 +23,7 @@ export const styWrapper = css`
   }
 
   .details {
+    color: #828282;
     padding: 16px 0;
     border-top: 1px dashed #c3c3c3;
   }

@@ -3,6 +3,7 @@ import { object, string, bool, func } from 'prop-types';
 import { Link } from 'gatsby';
 
 import WeddingImg from '@assets/images/wedding-logo.png';
+import getQueryValue from '@helpers/getQueryValue';
 
 import CountContainer from './CountContainer';
 import ScrollToDown from './ScrollToDown';
@@ -13,6 +14,7 @@ const DELAY_TIME = 1500;
 function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, onClickDetail }) {
   const [loading, setLoading] = useState(false);
   const [alreadyDownloadData, setAlreadyDownloadData] = useState(false);
+  const codeLink = getQueryValue(location, 'code') || '';
 
   const handleScrollTo = () => {
     /** scroll into detail view */
@@ -79,7 +81,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, onCl
               {isInvitation && (
                 <div className="row" css={styButtonWrapper}>
                   <div className="col-md-3">
-                    <Link to="/e-ticket">
+                    <Link to={`/e-ticket${codeLink ? `?code=${codeLink}` : ''}`}>
                       <button className="btn btn-default btn-block">Lihat e-Ticket</button>
                     </Link>
                   </div>
