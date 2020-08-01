@@ -10,7 +10,7 @@ function WishesItem({ image, name, infoName, description, isActive }) {
       <div className="item" css={styWrapperItem}>
         <div className={`testimony-slide text-center ${isActive ? 'active' : 'hide'}`}>
           <figure>
-            <img src={image} alt="user" />
+            <img src={image} alt="user" loading="eager" />
           </figure>
           <h4>{name}</h4>
           <span className="infoName">{infoName}</span>

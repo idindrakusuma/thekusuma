@@ -67,5 +67,6 @@ export const styButtonWrapper = css`
   img {
     max-width: 28px;
     margin-right: 8px;
+    margin-bottom: 0;
   }
 `;

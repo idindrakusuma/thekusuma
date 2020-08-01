@@ -7,6 +7,9 @@ import dianara from '@assets/images/w-dianara.jpg';
 import rahma from '@assets/images/w-rahma.jpg';
 import vela from '@assets/images/w-vela.jpg';
 import iqmala from '@assets/images/w-iqmala.jpg';
+import ihsan from './assets/w-ihsan.jpg';
+import fajar from './assets/w-fajar.jpg';
+import risa from './assets/w-risa.jpg';
 
 export const wishlist = [
   {
@@ -16,10 +19,24 @@ export const wishlist = [
     image: Nita,
   },
   {
+    name: 'Ihsan Satriawan',
+    infoName: 'Rekan Kerja Indra, Tokopedia',
+    description: `Selamat menggenapkan separuh Agama ya Indra dan Dinda. Semoga melalui pernikahan ini, kalian bisa saling menguatkan dalam mengarungi kehidupan ini baik dalam kondisi senang ataupun susah. Serta semakin dekat dan konsisten dalam menjalankan perintah Agama.`,
+    image: ihsan,
+  },
+  {
     name: 'Zakiy Anwar Fahri',
     infoName: 'Sahabat Dinda & Indra',
     description: `Hai Indra & Dinda, sebelum nya aku ucapin selamat akhirnya mencapai pernikahan. Semoga pernikahannya lancar dan menjadi keluarga sakinah mawahdah warahmah. Sebagai sahabat mu sejak awal kuliah kita berjuang bersama dan akhirnya sampai titik ini aku seneng banget kamu bisa menggapai cita-cita mu pelan-pelan, setelah ini kamu akan memulai perjalan dengan seorang yang akan lebih setia dari Sahabat yaitu Istri (Dinda), tetep sabar dan setia ya Ndra. Nahh, untuk Dinda bantu sahabat ku semakin baik ya hehe. :D`,
     image: Zakiy,
+  },
+  {
+    name: 'Risalatul Muawanah',
+    infoName: 'Sahabat Dinda',
+    description: `"Hey Din!  Finally ..... Happy Wedding!  Hopefully become a family that Sakinah Mawaddah Warohmah until HIS heaven later! 
+    Become a blessed family and always be happy!  May your dreams always be achieved!  Always complement and support each other! 
+    I will wait for 5 children yea! Hihi 😅😅😘"`,
+    image: risa,
   },
   {
     name: 'Moleta Tiara Mahayanti',
@@ -42,10 +59,26 @@ export const wishlist = [
     image: hapsari,
   },
   {
+    name: 'Herza',
+    infoName: 'Rekan Kerja Indra, Tokopedia',
+    description: `"Untuk Indra dan Dinda, semoga lancar ya acara pernikahannya dan senantiasa aman dan kondusif meski keadaan seperti ini. 
+    Salut dengan ketetapan untuk mengukuhkan ikatan meski sdg banyak rintangan.
+    Pokoknya saya doain yg terbaik untuk kalian berdua, mulai dari hari h acara sampai seterusnya.
+    Semoga jadi keluarga yg sakinah, mawadah, warahmah ya. Amiin.
+    Selamat berbahagia, Indra & Dinda!"`,
+    image: Image,
+  },
+  {
     name: 'Dhyanara NP',
     infoName: 'Sahabat Dinda',
     description: `Semoga pernikahan ini membawa Dinda dan Indra dalam ketentraman (sakinah), cinta (mawaddah) dan welas asih (rohmah). Jika saja semakin tumbuhnya cinta itu tak muat masuk ke rongga dada, semoga Allah berikan kelapangan rasa. Semoga Allah mudahkan segala tujuan awal saat kalian berdua memutuskan bersama:)`,
     image: dianara,
+  },
+  {
+    name: 'Fajar Falahiat',
+    infoName: 'Rekan Kerja Indra, Tokopedia',
+    description: `Selamat menikah Indra Kusuma! Semoga pernikahannya berkah, sakinah mawaddah warohmah. Good luck bro and thanks for being such a good friend and mentor!`,
+    image: fajar,
   },
   {
     name: 'Pramudina Rahmawati',

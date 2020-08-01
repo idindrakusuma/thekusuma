@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import { bool } from 'prop-types';
 
 import WeddingInfoBox from './WeddingInfoBox';
-import IconIg from './assets/instagram.png';
-import { styWrapper, styButtonWrapper } from './styles';
+import ButtonLive from './ButtonLive';
+import { styWrapper } from './styles';
 
 function WeddingSection({ isAnonymGuest }) {
   const renderGuestInfo = () => {
@@ -12,19 +12,7 @@ function WeddingSection({ isAnonymGuest }) {
         <div className="col-md-8 col-md-offset-4">
           <WeddingInfoBox title="Akad Nikah" time="08.00 WIB (Live di Instagram)" date="Sabtu, 03 Oktober 2020" />
         </div>
-        <div className="row">
-          <div className="col-md-12">
-            <p className="text__live">Hadir secara virtual melalui siarang langsung instagram: </p>
-            <a href="https://www.instagram.com/dindadipoyono/" target="_blank" rel="noreferrer">
-              <div css={styButtonWrapper}>
-                <div className="img__wrapper">
-                  <img src={IconIg} alt="Live IG" />
-                  <span>@dindadipoyono</span>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
+        <ButtonLive />
       </Fragment>
     );
   };
