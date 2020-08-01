@@ -6,7 +6,7 @@ import MusicBacksound from '@assets/music/lagu-pernikahan-impian.mp3';
 import { styMusicFloating } from './styles';
 
 function FloatingMusic() {
-  const [play, setPlay] = useState(false);
+  const [play, setPlay] = useState(true);
 
   const toggleMusic = () => {
     const myAudio = document.getElementById('myAudio');
