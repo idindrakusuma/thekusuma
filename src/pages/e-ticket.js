@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 
-import MainLayout from '@components/Layout/Ticket';
+import MainLayout from '@components/Layout';
 import Ticket from '@components/Ticket';
 
 import useGuestData from '@/hooks/useGuestData';
