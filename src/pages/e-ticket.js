@@ -3,9 +3,10 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import MainLayout from '@components/Layout';
 import Ticket from '@components/Ticket';
 
+import getQueryValue from '@helpers/getQueryValue';
 import useGuestData from '@/hooks/useGuestData';
+import useConfigData from '@/hooks/useConfigData';
 import { styTicket } from '@components/Ticket/styles';
-import getQueryValue from '../helpers/getQueryValue';
 
 function ETicket({ location }) {
   const codeEticket = getQueryValue(location, 'code') || '';
@@ -16,6 +17,7 @@ function ETicket({ location }) {
   const [isShowTicket, setIsShowTicket] = useState(false);
 
   const { data, loading } = useGuestData();
+  const { data: configData, loading: configLoading } = useConfigData();
 
   const handleSetValue = (e) => {
     setValue(e.target.value);
@@ -57,7 +59,9 @@ function ETicket({ location }) {
   }, [codeEticket, data.length, handleCheckTicket, loading]);
 
   const renderTypeContent = () => {
-    if (isShowTicket) return <Ticket guest={selectedGuest} onRecheckTicket={() => setIsShowTicket(false)} />;
+    if (isShowTicket) return <Ticket guest={selectedGuest} configData={configData} />;
+
+    const isLoading = loading || configLoading || false;
 
     return (
       <>
@@ -69,12 +73,12 @@ function ETicket({ location }) {
           <div class="input-group">
             <input
               value={value}
-              disabled={loading}
+              disabled={isLoading}
               onChange={handleSetValue}
               onKeyDown={handleKeyDown}
               type="text"
               class="form-control"
-              placeholder={`${loading ? 'Tunggu sebentar..' : 'Tulis kode undangan..'}`}
+              placeholder={`${isLoading ? 'Tunggu sebentar..' : 'Tulis kode undangan..'}`}
             />
             <span class="input-group-btn">
               <button class="btn btn-default" type="button" style={{ height: '54px' }}>
