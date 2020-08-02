@@ -11,6 +11,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-eslint',
     `gatsby-plugin-emotion`,
+    'gatsby-optional-chaining',
     {
       resolve: 'gatsby-alias-imports',
       options: {
@@ -19,6 +20,7 @@ module.exports = {
           '@helpers': 'src/helpers',
           '@pages': 'src/pages',
           '@assets': 'src/assets',
+          '@hooks': 'src/hooks',
           '@': 'src',
         },
       },
