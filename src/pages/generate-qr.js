@@ -12,7 +12,7 @@ function GenerateQRPage() {
     if (loading) return <div>Menyiapkan data..</div>;
 
     return data.map((guest) => {
-      return <QRCard name={guest.name} code={guest.code} />;
+      return <QRCard name={guest.name} code={guest.code} desc={guest.desc} />;
     });
   };
 
