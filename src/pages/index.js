@@ -21,7 +21,7 @@ function Home({ location }) {
   const guestName = decodeURIComponent(getQueryValue(location, 'to') || '');
   const isInvitation = getQueryValue(location, 'type') === 'invitation';
   const firstName = guestName.replace(/ .*/, '');
-  const isAnonymGuest = guestName === '';
+  const isAnonymGuest = guestName === '' && !isInvitation;
 
   const [showDetailContent, setShowDetailContent] = useState(false);
 
@@ -34,15 +34,15 @@ function Home({ location }) {
 
     return (
       <Fragment>
-        <HelloSection guestName={firstName} />
-        <WeddingSection isAnonymGuest={isAnonymGuest} />
+        <HelloSection isInvitation={isInvitation} />
+        <WeddingSection isInvitation={isInvitation} />
         {isInvitation && <CovidSection />}
         {isInvitation && <LocationSection />}
         <StorySection />
         <PhotoSection />
         <WishesSection />
-        <ConfirmationSection guestName={firstName} isAnonymGuest={isAnonymGuest} />
-        <FooterSection isAnonymGuest={isAnonymGuest} />
+        <ConfirmationSection guestName={firstName} isInvitation={isInvitation} />
+        <FooterSection isInvitation={isInvitation} />
       </Fragment>
     );
   };

@@ -2,10 +2,10 @@ import React, { Fragment } from 'react';
 import { bool } from 'prop-types';
 import { styWrapper } from '../HelloSection/styles';
 
-function FooterSection({ isAnonymGuest }) {
+function FooterSection({ isInvitation }) {
   return (
     <Fragment>
-      {isAnonymGuest && (
+      {!isInvitation && (
         <div id="fh5co-couple" className="fh5co-section-gray" css={styWrapper}>
           <div className="container">
             <div className="row">
@@ -60,7 +60,7 @@ function FooterSection({ isAnonymGuest }) {
 }
 
 FooterSection.propTypes = {
-  isAnonymGuest: bool.isRequired,
+  isInvitation: bool.isRequired,
 };
 
 export default React.memo(FooterSection);

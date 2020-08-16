@@ -3,8 +3,8 @@ import { string, bool } from 'prop-types';
 import { Link } from 'gatsby';
 import { styWrapper, styFlex } from './styles';
 
-function ConfirmationSection({ isAnonymGuest, guestName }) {
-  if (isAnonymGuest) return null;
+function ConfirmationSection({ isInvitation, guestName }) {
+  if (!isInvitation) return null;
 
   return (
     <div id="fh5co-started" className="fh5co-bg" css={styWrapper}>
@@ -32,7 +32,7 @@ function ConfirmationSection({ isAnonymGuest, guestName }) {
 }
 
 ConfirmationSection.propTypes = {
-  isAnonymGuest: bool.isRequired,
+  isInvitation: bool.isRequired,
   guestName: string.isRequired,
 };
 
