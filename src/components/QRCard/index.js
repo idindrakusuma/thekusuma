@@ -9,8 +9,17 @@ function QRCard({ name, code, desc }) {
         <div className="qr__wrapper">
           <QRCode value={code} size={150} />
         </div>
-        <h3 className="title__name">{name}</h3>
-        <h4 className="title__code">{`(${desc})`}</h4>
+        {name ? (
+          <>
+            <h3 className="title__name">{name}</h3>
+            <h4 className="title__code">{`(${desc})`}</h4>
+          </>
+        ) : (
+          <>
+            <h3 className="title__name">{code}</h3>
+            <h4 className="title__code title__transaparent">{`(${desc})`}</h4>
+          </>
+        )}
       </div>
     </div>
   );

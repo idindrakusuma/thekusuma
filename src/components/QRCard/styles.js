@@ -26,4 +26,8 @@ export const styWrapper = css`
     font-size: 10px;
     margin: 0 0 8px 0;
   }
+
+  .title__transaparent {
+    opacity: 0;
+  }
 `;
