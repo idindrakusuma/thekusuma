@@ -5,7 +5,7 @@ import WeddingInfoBox from './WeddingInfoBox';
 import ButtonLive from './ButtonLive';
 import { styWrapper } from './styles';
 
-function WeddingSection({ isAnonymGuest }) {
+function WeddingSection({ isInvitation }) {
   const renderGuestInfo = () => {
     return (
       <Fragment>
@@ -30,8 +30,8 @@ function WeddingSection({ isAnonymGuest }) {
             </div>
           </div>
           <div className="row">
-            {isAnonymGuest && renderGuestInfo()}
-            {!isAnonymGuest && (
+            {!isInvitation && renderGuestInfo()}
+            {isInvitation && (
               <div className="col-md-10 col-md-offset-1">
                 <WeddingInfoBox
                   title="Akad Nikah"
@@ -57,7 +57,7 @@ function WeddingSection({ isAnonymGuest }) {
 }
 
 WeddingSection.propTypes = {
-  isAnonymGuest: bool.isRequired,
+  isInvitation: bool.isRequired,
 };
 
 export default React.memo(WeddingSection);

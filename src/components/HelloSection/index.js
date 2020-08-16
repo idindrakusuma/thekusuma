@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
-import { string } from 'prop-types';
+import { bool } from 'prop-types';
 
 import Bride from '@assets/images/p-dinda-2.jpg';
 import Groom from '@assets/images/p-indra.jpg';
 
 import { styWrapper } from './styles';
 
-function HelloSection({ guestName }) {
-  const finalSubtitle = guestName ? '03 Oktober 2020, HARRIS Hotel Sentraland, Semarang' : 'Sabtu, 03 Oktober 2020';
+function HelloSection({ isInvitation }) {
+  const finalSubtitle = isInvitation ? '03 Oktober 2020, HARRIS Hotel Sentraland, Semarang' : 'Sabtu, 03 Oktober 2020';
 
   return (
     <Fragment>
@@ -56,7 +56,7 @@ function HelloSection({ guestName }) {
           </div>
         </div>
       </div>
-      {!guestName && (
+      {!isInvitation ? (
         <div id="fh5co-couple" className="fh5co-section-gray" css={styWrapper}>
           <div className="container">
             <div className="row">
@@ -75,13 +75,13 @@ function HelloSection({ guestName }) {
             </div>
           </div>
         </div>
-      )}
+      ) : null}
     </Fragment>
   );
 }
 
 HelloSection.propTypes = {
-  guestName: string.isRequired,
+  isInvitation: bool.isRequired,
 };
 
 export default HelloSection;
