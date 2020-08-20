@@ -64,7 +64,7 @@ function HelloSection({ isInvitation }) {
                 <h2 className="main-font">Seputar Covid-19</h2>
                 <p className="info">
                   Berkaitan dengan kondisi pandemik saat ini, keberlangsungan acara kami mengacu pada pedoman
-                  Kementerian Kesehatan, yaitu memeberlakukan pembatasan jarak dan pembatasan jumlah tamu undangan.
+                  Kementerian Kesehatan, yaitu memberlakukan pembatasan jarak dan pembatasan jumlah tamu undangan.
                 </p>
                 <p className="info">
                   Maka dari itu, dengan segala kerendahan hati, kami mohon maaf jika belum bisa mengundang saudara/i

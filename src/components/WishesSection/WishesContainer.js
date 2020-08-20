@@ -2,16 +2,30 @@ import React, { useState, useEffect, useCallback } from 'react';
 
 import WishesItem from './WishesItem';
 import { wishlist } from './wishlist-data';
-import { styOwl } from './styles';
+import { styButtonWrapper } from './styles';
 
-const INTERVAL_SLIDE = 10000;
+const INTERVAL_SLIDE = 35000;
 
 function WishesContainer() {
   const [active, setActive] = useState(0);
   const [pauseSlide, setPauseSlide] = useState(false);
+  const totalWishes = wishlist.length || 0;
 
-  const handleSetActive = (index) => {
-    setActive(index);
+  const handleSetActive = (isNext = true) => {
+    if (isNext) {
+      if (active === totalWishes - 1) {
+        setActive(0);
+      } else {
+        setActive(active + 1);
+      }
+    } else {
+      if (active === 0) {
+        setActive(totalWishes - 1);
+      } else {
+        setActive(active - 1);
+      }
+    }
+
     setPauseSlide(true);
 
     setTimeout(() => {
@@ -31,19 +45,7 @@ function WishesContainer() {
     return wishlist.map((w, index) => <WishesItem key={index} {...w} isActive={index === active} />);
   };
 
-  const renderNavigation = () => {
-    return wishlist.map((w, index) => (
-      <div
-        className={`owl-dot ${index === active ? 'active' : ''}`}
-        key={index}
-        onClick={() => handleSetActive(index)}
-      />
-    ));
-  };
-
-  /**
-   * Side effect to autoscroll
-   */
+  /** Side effect to autoscroll */
   useEffect(() => {
     const interval = setInterval(() => {
       if (!pauseSlide) {
@@ -59,8 +61,9 @@ function WishesContainer() {
   return (
     <div className="wrap-testimony">
       {renderWishlist()}
-      <div css={styOwl}>
-        <div className="owl-dots">{renderNavigation()}</div>
+      <div css={styButtonWrapper}>
+        <button className="btn btn-sm button-nav" onClick={() => handleSetActive(false)}>{`< Sebelumnya`}</button>
+        <button className="btn btn-sm button-nav" onClick={() => handleSetActive(true)}>{`Selanjutnya >`}</button>
       </div>
     </div>
   );

@@ -1,29 +1,5 @@
 import { css, keyframes } from '@emotion/core';
 
-export const styOwl = css`
-  margin-top: 10px;
-  text-align: center;
-
-  .owl-dots {
-    display: flex;
-    justify-content: center;
-
-    .owl-dot {
-      width: 10px;
-      height: 10px;
-      margin: 0 4px;
-      border-radius: 50%;
-      background: #e6e6e6;
-      cursor: pointer;
-    }
-
-    .active {
-      background: transparent;
-      border: 2px solid #f14e95;
-    }
-  }
-`;
-
 const animation = keyframes`
   0% { right: -300px; opacity: 0;}
   50% { right: 50px; opacity: 0.5;}
@@ -49,6 +25,10 @@ export const styWrapperItem = css`
     margin: 0 0 4px 0;
   }
 
+  blockquote {
+    margin-top: 16px !important;
+  }
+
   .infoName {
     font-size: 12px;
     text-transform: capitalize;
@@ -64,9 +44,23 @@ export const styWrapperItem = css`
     diplay: block;
   }
 
+  .description {
+    font-size: 16px !important;
+  }
+
   @media screen and (max-width: 400px) {
     .description {
-      font-size: 16px !important;
+      font-size: 14px !important;
     }
+  }
+`;
+
+export const styButtonWrapper = css`
+  display: flex;
+  justify-content: center;
+
+  .button-nav {
+    font-size: 14px;
+    padding: 5px 20px;
   }
 `;

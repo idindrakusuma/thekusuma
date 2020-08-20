@@ -37,7 +37,7 @@ export const stories = [
     title: 'Kembali ke Indonesia',
     date: '3 Maret 2019',
     description:
-      'Periode belajar di Kroasia telah selesai. Akhirnya Dinda kembali ke Indonesia! Ada tanggung jawab yang harus Dinda selesaikan seusai dari Kroasia, yakni harus menyelesaikan skripsi dan mencapai target untuk wisuda di bulan Agustus 2019. Selain itu, kembalinya Dinda ke Indonesia menjadi momen yang tepat bagi Indra untuk menyampaikan niat ingin serius kepada orang tua Dinda. Hal itu disambut baik oleh kedua orang tuanya dan sepakat akan melaksanakan acara Ndodok Lawang usai Dinda wisuda. Sebelum wisuda, Dinda sudah harus meniti karir di Jakarta sebagai seorang Content Analyst di Ruangguru.',
+      'Periode belajar di Kroasia telah selesai. Akhirnya Dinda kembali ke Indonesia! Ada tanggung jawab yang harus Dinda selesaikan seusai dari Kroasia, yakni harus menyelesaikan skripsi dan mencapai target untuk wisuda di bulan Agustus 2019. Selain itu, kembalinya Dinda ke Indonesia menjadi momen yang tepat bagi Indra untuk menyampaikan niat ingin serius kepada orang tua Dinda. Hal itu disambut baik oleh kedua orang tua mereka  dan sepakat akan melaksanakan acara Ndodok Lawang usai Dinda wisuda. Sebelum wisuda, Dinda sudah harus meniti karir di Jakarta sebagai seorang Content Analyst di Ruangguru.',
     image: ImgKembaliKeIndonesia,
   },
   {
