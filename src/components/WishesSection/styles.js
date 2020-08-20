@@ -14,7 +14,7 @@ const animationLeft = keyframes`
 
 export const styWithAnimation = (isActive) => css`
   position: relative;
-  animation: ${isActive ? animation : animationLeft} 1.2s;
+  animation: ${isActive ? animation : animationLeft} 1s;
 `;
 
 export const styWrapperItem = css`
