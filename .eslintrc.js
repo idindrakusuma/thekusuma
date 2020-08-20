@@ -5,7 +5,7 @@ module.exports = {
   extends: `react-app`,
   rules: {
     'jsx-a11y/accessible-emoji': 'off',
-    'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
+    // 'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: false }],
     'import/no-unresolved': [2, { caseSensitive: false }],
   },
   settings: {
