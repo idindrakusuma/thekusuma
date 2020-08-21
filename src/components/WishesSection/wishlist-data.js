@@ -18,6 +18,8 @@ import alvia from './assets/w-alvia.jpg';
 import yunias from './assets/w-yunias.jpg';
 import yunita from './assets/w-yunita.jpg';
 import fitria from './assets/w-fitria.jpg';
+import joshua from './assets/w-joshua.jpg';
+import sibra from './assets/w-sibra.jpg';
 
 export const wishlist = [
   {
@@ -128,7 +130,6 @@ export const wishlist = [
     Semoga pernikahan kalian bisa menjadi ladang ibadah dan pahala, dan menjadi pasangan sehidup sesurga. Sakinah, mawaddah wa rahmah selalu. Amiin"`,
     image: puspita,
   },
-  // NEW
   {
     name: 'Ghea Maurizka',
     infoName: 'Sahabat Kuliah Dinda',
@@ -165,5 +166,18 @@ export const wishlist = [
     infoName: 'Sahabat Kuliah Dinda',
     description: `Selamat menempuh hidup baru buat Dinda dan Mas Indra!❤️ Semoga samawa yaaa dan cepet dapet momongan :p amin! see you😘🌷`,
     image: fitria,
+  },
+  // NEW
+  {
+    name: 'Joshua Stephen',
+    infoName: 'Rekan Kerja Indra, Tokopedia',
+    description: `For Indra & Dinda, wishing you the best marriage and everlasting happiness. May you are abundantly blessed as one family.`,
+    image: joshua,
+  },
+  {
+    name: 'Sibra',
+    infoName: 'Rekan Kerja Indra, Tokopedia',
+    description: `Selamat membuka lembaran baru indra dan dinda, semoga menjadi keluarga yang harmonis dan saling menguatkan di masa sulit maupun senang.. congrats bro indra..`,
+    image: sibra,
   },
 ];
