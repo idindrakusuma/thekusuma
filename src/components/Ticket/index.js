@@ -19,8 +19,29 @@ function TicketData({ guest, configData }) {
           <div class="tdata name">{guest.name}</div>
           <div class="tinfo">Keterangan</div>
           <div class="tdata">{guest.desc}</div>
-          <div class="tinfo">Waktu Pelaksanaan</div>
-          <div class="tdata">{configData.shiftType?.[guest.shift] || '11.00 WIB - 13.00 WIB'}</div>
+          <div class="tinfo">Syukuran Pernikahan / Shift</div>
+          <div class="tdata">
+            {`${configData.shiftType?.[guest.shift]} / ${guest.shift}` || '11.00 WIB - 13.00 WIB'}
+          </div>
+          {/* attendance */}
+          {guest.isAttended ? (
+            <>
+              <div class="tinfo">Sudah hadir pada</div>
+              <div class="tdata">
+                <span class="badge badge-success">{guest.attendedAt}</span>
+              </div>
+            </>
+          ) : null}
+          {/** souvenir */}
+          {guest.isExchanged ? (
+            <>
+              <div class="tinfo">Sudah menukarkan souvenir pada</div>
+              <div class="tdata">
+                <span class="badge badge-success">{guest.exchangedAt}</span>
+              </div>
+            </>
+          ) : null}
+          {/* Additional info */}
           <div class="tinfo"></div>
           <div class="tdata additional">
             * Setiap tamu yang hadir wajib menunjukkan QRCode ini sebagai pengganti buku tamu dan menghindari penularan
