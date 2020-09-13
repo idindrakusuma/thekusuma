@@ -22,6 +22,7 @@ function Home({ location }) {
   const isInvitation = getQueryValue(location, 'type') === 'invitation';
   const firstName = guestName.replace(/ .*/, '');
   const isAnonymGuest = guestName === '' && !isInvitation;
+  const codeLink = getQueryValue(location, 'code') || '';
 
   const [showDetailContent, setShowDetailContent] = useState(false);
 
@@ -41,7 +42,7 @@ function Home({ location }) {
         <StorySection />
         <PhotoSection />
         <WishesSection />
-        <ConfirmationSection guestName={firstName} isInvitation={isInvitation} />
+        <ConfirmationSection guestName={firstName} isInvitation={isInvitation} codeLink={codeLink} />
         <FooterSection isInvitation={isInvitation} />
       </Fragment>
     );

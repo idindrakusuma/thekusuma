@@ -1,9 +1,10 @@
 import React from 'react';
 import { string, bool } from 'prop-types';
 import { Link } from 'gatsby';
+
 import { styWrapper, styFlex } from './styles';
 
-function ConfirmationSection({ isInvitation, guestName }) {
+function ConfirmationSection({ isInvitation, guestName, codeLink }) {
   if (!isInvitation) return null;
 
   return (
@@ -21,7 +22,7 @@ function ConfirmationSection({ isInvitation, guestName }) {
         </div>
         <div className="row" css={styFlex}>
           <div className="col-md-3">
-            <Link to="e-ticket">
+            <Link to={`e-ticket?code=${codeLink}`}>
               <button className="btn btn-default btn-block">Lihat e-Ticket</button>
             </Link>
           </div>
@@ -32,6 +33,7 @@ function ConfirmationSection({ isInvitation, guestName }) {
 }
 
 ConfirmationSection.propTypes = {
+  codeLink: string.isRequired,
   isInvitation: bool.isRequired,
   guestName: string.isRequired,
 };
