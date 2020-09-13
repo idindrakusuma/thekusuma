@@ -37,15 +37,13 @@ function WeddingSection({ isInvitation }) {
                   title="Akad Nikah"
                   time="Akan dilaksanakan pagi hari "
                   date="Sabtu, 03 Oktober 2020"
-                  description="HARRIS Hotel Sentraland, Semarang"
-                  mobileDescription="HARRIS Hotel Sentraland, Semarang"
+                  description="Orange Ballroom <br/>HARRIS Hotel Sentraland, Semarang"
                 />
                 <WeddingInfoBox
                   title="Syukuran Pernikahan"
                   time="Sesuai jadwal undangan di e-ticket "
                   date="Sabtu, 03 Oktober 2020"
-                  description="HARRIS Hotel Sentraland, Semarang"
-                  mobileDescription="HARRIS Hotel Sentraland, Semarang"
+                  description="Orange Ballroom <br/>HARRIS Hotel Sentraland, Semarang"
                 />
               </div>
             )}

@@ -17,7 +17,7 @@ function WeddingInfoBox({ title, date, time, description }) {
         {description && (
           <div className="event-col">
             <i className="icon-location-pin"></i>
-            <span>{description}</span>
+            <span dangerouslySetInnerHTML={{ __html: description }} />
           </div>
         )}
       </div>
