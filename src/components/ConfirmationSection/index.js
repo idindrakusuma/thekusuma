@@ -15,7 +15,7 @@ function ConfirmationSection({ isInvitation, guestName, codeLink }) {
           <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
             <h2 className="main-font">{` Apakah kamu hadir, ${guestName}?`}</h2>
             <p>
-              Atas kehadiran & do'a restu saudara/i, <br /> kami ucapkan teima kasih. Wassalamualaikum Warahmatullahi
+              Atas kehadiran & do'a restu saudara/i, <br /> kami ucapkan terima kasih. Wassalamualaikum Warahmatullahi
               Wabarakatuh.
             </p>
           </div>
