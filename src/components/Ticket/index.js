@@ -42,10 +42,20 @@ function TicketData({ guest, configData }) {
             </>
           ) : null}
           {/* Additional info */}
-          <div class="tinfo"></div>
+          <div class="tinfo">Penting</div>
           <div class="tdata additional">
-            * Setiap tamu yang hadir wajib menunjukkan QRCode ini sebagai pengganti buku tamu dan menghindari penularan
-            melalui pena
+            <ul style={{ paddingLeft: '16px' }}>
+              <li>
+                {`Setiap tamu yang hadir wajib menunjukkan QRCode ini sebagai pengganti buku tamu untuk untuk meminimalisir kontak fisik melalui pena.`}
+              </li>
+              <li style={{ textTransform: 'uppercase' }}>
+                Dalam rangka mematuhi protokol kesehatan,
+                <span style={{ color: '#f14e95', textTransform: 'uppercase' }}>
+                  {` 1 undangan hanya berlaku untuk 2 orang tamu`}
+                </span>
+              </li>
+            </ul>
+            <br />
           </div>
         </div>
       </div>
