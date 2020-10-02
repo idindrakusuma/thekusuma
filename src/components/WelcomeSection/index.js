@@ -3,18 +3,15 @@ import { object, string, bool, func } from 'prop-types';
 import { Link } from 'gatsby';
 
 import WeddingImg from '@assets/images/wedding-logo.png';
-import getQueryValue from '@helpers/getQueryValue';
-
 import CountContainer from './CountContainer';
 import ScrollToDown from './ScrollToDown';
 import { styWrapper, styHero, styBackground, styButtonWrapper } from './styles';
 
 const DELAY_TIME = 1500;
 
-function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, onClickDetail }) {
+function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, codeLink, onClickDetail }) {
   const [loading, setLoading] = useState(false);
   const [alreadyDownloadData, setAlreadyDownloadData] = useState(false);
-  const codeLink = getQueryValue(location, 'code') || '';
 
   const handleScrollTo = () => {
     /** scroll into detail view */
@@ -81,7 +78,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, onCl
               {isInvitation && (
                 <div className="row" css={styButtonWrapper}>
                   <div className="col-md-3">
-                    <Link to={`/e-ticket${codeLink ? `?code=${codeLink}` : ''}`}>
+                    <Link to={`/e-ticket?${codeLink}`}>
                       <button className="btn btn-default btn-block">Lihat e-Ticket</button>
                     </Link>
                   </div>
@@ -103,7 +100,12 @@ WelcomeSection.propTypes = {
   isInvitation: bool.isRequired,
   isAnonymGuest: bool.isRequired,
   location: object.isRequired,
+  codeLink: string,
   onClickDetail: func.isRequired,
+};
+
+WelcomeSection.defaultProps = {
+  codeLink: '',
 };
 
 export default WelcomeSection;

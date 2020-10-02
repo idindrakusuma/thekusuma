@@ -10,6 +10,7 @@ import { styTicket } from '@components/Ticket/styles';
 
 function ETicket({ location }) {
   const codeEticket = getQueryValue(location, 'code') || '';
+  const nameEticket = getQueryValue(location, 'name') || '';
   const alreadyChecked = useRef(false);
 
   const [value, setValue] = useState('');
@@ -25,14 +26,17 @@ function ETicket({ location }) {
       const guest = data.find((g) => (g.code || '').toUpperCase() === guestCode);
 
       if (guest) {
-        setSelectedGuest(guest);
-        setIsShowTicket(true);
-        return;
+        if (guest.name.toUpperCase().includes(nameEticket.toUpperCase())) {
+          setSelectedGuest(guest);
+          setIsShowTicket(true);
+          return;
+        }
       }
 
       alert(`Maaf, Kode data ${guestCode} tidak ditemukan. Mohon di cek lagi..`);
+      window.location.assign('https://thekusuma.com');
     },
-    [data, value],
+    [data, nameEticket, value],
   );
   /**
    * Effect to autu-check code ticket
