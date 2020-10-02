@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import offlineGuestData from '../../api/guest-data.json';
 
 function useGuestData() {
   const [loading, setLoading] = useState(false);
@@ -8,10 +9,7 @@ function useGuestData() {
     setLoading(true);
 
     try {
-      const rawResult = await fetch(`https://qr-wedding-app.firebaseio.com/guest.json`);
-      const result = await rawResult.json();
-
-      setData(result || []);
+      setData(offlineGuestData || []);
       setLoading(false);
     } catch {
       console.error('ERR_WHEN_HIT_DATA');
