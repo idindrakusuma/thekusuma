@@ -58,7 +58,11 @@ function HelloSection({ isInvitation }) {
       </div>
       {!isInvitation ? (
         <div id="fh5co-couple" className="fh5co-section-gray" css={styWrapper}>
-          
+          <div className="container">
+            <div className="row">
+              
+            </div>
+          </div>
         </div>
       ) : null}
     </Fragment>
