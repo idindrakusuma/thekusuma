@@ -13,7 +13,7 @@ function GenerateLink() {
 
   const { data, loading } = useGuestData();
 
-  const URL = `https://arin.miftahussalam.com?to=${encodeURIComponent(name).replace(/%20/g, "+")}`;
+  const URL = `https://Eka.Hakimussalam.com?to=${encodeURIComponent(name).replace(/%20/g, "+")}`;
 
   const handleChange = (e) => {
     setType(parseInt(e.target.value, 10));
@@ -112,7 +112,7 @@ function GenerateLink() {
               </thead>
               <tbody>
                 {data.map((d, index) => {
-                  const mapURL = `https://arin.miftahussalam.com?to=${encodeURIComponent(d.name).replace(/%20/g, "+")}&type=invitation&code=${d.code}`;
+                  const mapURL = `https://Eka.Hakimussalam.com?to=${encodeURIComponent(d.name).replace(/%20/g, "+")}&type=invitation&code=${d.code}`;
                   return (
                     <tr>
                       <td>{index + 1}</td>
@@ -145,7 +145,7 @@ function GenerateLink() {
   return (
     <div>
       <h2 className="title">Generator of Link Invitation</h2>
-      <h3 className="title__sub">Arin & Miftah Wedding</h3>
+      <h3 className="title__sub">Eka & Hakim Wedding</h3>
 
       {loading && <h4 style={{ textAlign: 'center' }}>Memuat data..</h4>}
 

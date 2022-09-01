@@ -67,7 +67,7 @@ function SendWishes( {urlCode, urlName, urlType} ) {
             'invitation_code': urlCode,
             'invitation_name': urlName,
         }
-        let url = 'https://project.miftahussalam.com/wishes?' + ( new URLSearchParams( params ) ).toString();
+        let url = 'https://project.Hakimussalam.com/wishes?' + ( new URLSearchParams( params ) ).toString();
         try{
           await fetch(url, { mode: 'no-cors'}, {
             method: 'GET'
@@ -83,7 +83,7 @@ function SendWishes( {urlCode, urlName, urlType} ) {
   return (
     <div>
       <h2 className="title">Say Something For Us</h2>
-      <h3 className="title__sub">Arin & Miftah Wedding</h3>
+      <h3 className="title__sub">Eka & Hakim Wedding</h3>
 
       <Fragment>
         <form>
@@ -120,7 +120,7 @@ function SendWishes( {urlCode, urlName, urlType} ) {
                   onChange={handleSetInfoName}
                   type="text"
                   class="form-control"
-                  placeholder="misal: Teman SMP Arin"
+                  placeholder="misal: Teman SMP Eka"
                   required
                 ></input>
               </div>

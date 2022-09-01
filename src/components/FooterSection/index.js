@@ -9,7 +9,7 @@ function FooterSection({ isInvitation }) {
           <div className="row copyright">
             <div className="col-md-12 text-center">
               <p>
-                <small className="block">&copy; 2022 Created by Miftah with lots of 🤎 for Arin.</small>
+                <small className="block">&copy; 2022 Created by Hakim with lots of 🤎 for Eka.</small>
                 <small className="block">
                   Song by{' '}
                   <a href="https://www.youtube.com/watch?v=fb167KAxvrg" target="_blank" rel="noreferrer">

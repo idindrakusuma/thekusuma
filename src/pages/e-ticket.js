@@ -34,7 +34,7 @@ function ETicket({ location }) {
       }
 
       alert(`Maaf, Kode data ${guestCode} tidak ditemukan. Mohon di cek lagi..`);
-      window.location.assign('https://arin.miftahussalam.com/');
+      window.location.assign('https://Eka.Hakimussalam.com/');
     },
     [data, nameEticket, value],
   );

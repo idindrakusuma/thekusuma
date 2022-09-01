@@ -46,13 +46,13 @@ function useDateCountdown() {
        * If time has run out then stop the interval!
        */
       if (timeHasRunOut) {
-        clearInterval(interval);
+        cleEkaterval(interval);
       } else {
         calculateTimeLeft();
       }
     }, INTERVAL_TIME);
 
-    return () => clearInterval(interval);
+    return () => cleEkaterval(interval);
   }, [calculateTimeLeft, timeHasRunOut]);
 
   return { days, hours, minutes, seconds, timeHasRunOut, isEventOver };
