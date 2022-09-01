@@ -1,8 +1,8 @@
 import React, { useState, Fragment } from 'react';
 import { Link } from 'gatsby';
 import malePhoto from '@components/WishesSection/assets/male.png';
-import EmojiMartPicker from 'emoji-mart-picker';
-import imageCompression from 'browser-image-compression';
+
+
 
 function SendWishes( {urlCode, urlName, urlType} ) {
   const [name, setName] = useState();
