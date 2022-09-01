@@ -1,7 +1,7 @@
 /**
  * Link
  */
-export const GOOGLE_CALENDAR_LINK = `https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20220911T010000Z%2F20220911T080000Z&text=Arin+%26+Miftah+Wedding&details=Arin+%26+Miftah+Wedding`;
+export const GOOGLE_CALENDAR_LINK = `https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20220924T010000Z%2F20220924T080000Z&text=Eka+%26+Hakim+Wedding&details=Eka+%26+Hakim+Wedding`;
 export const GOOGLE_MAPS_LINK = `https://goo.gl/maps/kfFTBJKwRhw3qWut8`;
 
 /**
