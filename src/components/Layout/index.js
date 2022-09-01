@@ -23,16 +23,16 @@ function MainLayout({ children }) {
         {/* font and SEO tags */}
         <meta property="og:title" content="The Wedding of Eka & Hakim" />
         <meta property="og:image" itemprop="image" content={IMAGE_URL} />
-        <meta property="og:url" content="https://Eka.Hakimussalam.com" />
+        <meta property="og:url" content="https://ekahakim.netlify.app" />
         <meta property="og:site_name" content="The Wedding of Eka & Hakim" />
         <meta property="og:description" content={META_DESCRIPTION} />
         <meta property="og:type" content="website" />
         <meta name="twitter:title" content="The Wedding of Eka & Hakim" />
         <meta name="twitter:description" content={META_DESCRIPTION} />
         <meta name="twitter:image" content={IMAGE_URL} />
-        <meta name="twitter:url" content="https://Eka.Hakimussalam.com" />
+        <meta name="twitter:url" content="https://twitter.com/hacksetyobudi" />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:creator" content="@mif_salam" />
+        <meta name="twitter:creator" content="@hacksetyobudi" />
 
         <link
           href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700"
