@@ -21,6 +21,8 @@
     "clipboard-copy": "^4.0.1",
     "emoji-mart": "^5.2.1",
     "emoji-mart-picker": "^0.2.3",
+    "browser-image-compression": "^2.0.0",
+    "@emoji-mart/data": "^1.0.5",
     "gatsby-plugin-emotion": "^4.3.2",
     "gatsby-plugin-eslint": "^2.0.8",
     "gatsby-plugin-react-helmet": "^3.3.2",
