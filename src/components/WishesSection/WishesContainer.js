@@ -53,11 +53,11 @@ function WishesContainer( {codeLink} ) {
       if (!pauseSlide) {
         handleSetNext();
       } else {
-        cleEkaterval(interval);
+        clearIn(interval);
       }
     }, INTERVAL_SLIDE);
 
-    return () => cleEkaterval(interval);
+    return () => clearIn(interval);
   }, [handleSetNext, pauseSlide]);
 
   return (
