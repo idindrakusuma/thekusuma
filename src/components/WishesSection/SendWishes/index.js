@@ -1,7 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import { Link } from 'gatsby';
 import malePhoto from '@components/WishesSection/assets/male.png';
-import data from '@emoji-mart/data'
 import EmojiMartPicker from 'emoji-mart-picker';
 import imageCompression from 'browser-image-compression';
 
