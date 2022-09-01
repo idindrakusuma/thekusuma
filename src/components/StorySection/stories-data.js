@@ -1,7 +1,7 @@
 import ImgKhitbah from '@assets/images/khitbah.jpg';
 import ImgTransStudio from '@assets/images/trans-studio.jpg';
 import ImgPerkenalanKeluarga from '@assets/images/perkenalan-keluarga.jpg';
-import ImgEkaHakim from '@assets/images/Eka-Hakim.png';
+import ImgEkaHakim from '@assets/images/hapus.png';
 
 export const stories = [
   {
