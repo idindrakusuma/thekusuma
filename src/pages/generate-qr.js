@@ -8,7 +8,7 @@ import { styWrapper } from '@components/QRCard/styles';
 function GenerateQRPage() {
   const { data, loading } = useGuestData();
 
-  const finalData = data.filter((guest, index) => index >= 177);
+  const finalData = data.filter((guest, index) => index >= 0);
 
   const renderContent = () => {
     if (loading) return <div>Menyiapkan data..</div>;

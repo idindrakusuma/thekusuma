@@ -23,7 +23,7 @@ function useDateCountdown() {
 
     if (TIME_LEFT < 0) {
       setIsEventOver(currentEpochTime > EPOCH_END_EVENT);
-      setTimeHasRunOut(false);
+      setTimeHasRunOut(true);
       return;
     }
 

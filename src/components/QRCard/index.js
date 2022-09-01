@@ -3,11 +3,12 @@ import QRCode from 'react-qr-code';
 import { string } from 'prop-types';
 
 function QRCard({ name, code, desc }) {
+  const URL = `https://arin.miftahussalam.com?to=${encodeURIComponent(name).replace(/%20/g, "+")}&type=invitation&code=${code}`;
   return (
     <div className="col-md-2 col-sm-2">
       <div className="qr">
         <div className="qr__wrapper">
-          <QRCode value={code} size={150} />
+          <QRCode value={URL} size={150} />
         </div>
         {name ? (
           <>

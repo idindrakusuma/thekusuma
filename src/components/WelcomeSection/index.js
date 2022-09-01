@@ -3,6 +3,7 @@ import { object, string, bool, func } from 'prop-types';
 import { Link } from 'gatsby';
 
 import WeddingImg from '@assets/images/wedding-logo.png';
+import { GOOGLE_CALENDAR_LINK } from '@/constants';
 import CountContainer from './CountContainer';
 import ScrollToDown from './ScrollToDown';
 import { styWrapper, styHero, styBackground, styButtonWrapper } from './styles';
@@ -45,7 +46,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
   };
 
   const renderGuestSection = () => {
-    if (isAnonymGuest) return <h2 className="to-dearest-name"></h2>;
+    if (isAnonymGuest) return <h2 className="to-dearest-name">Dear Friends,</h2>;
 
     return (
       <Fragment>
@@ -68,12 +69,20 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
         <div className="container">
           <div className="row" css={styWrapper}>
             <div className="col-md-8 col-md-offset-2 text-center">
-              <img src={WeddingImg} alt="wedding-dinda-indra" />
+              <img src={WeddingImg} alt="wedding-arin-miftah" />
               <h4 className="sub-title">The Wedding of</h4>
-              <h1 className="title">Dinda &amp; Indra</h1>
+              <h1 className="title">Arin &amp; Miftah</h1>
               <div className={isAnonymGuest ? 'margin__bottom' : ''}>
                 <CountContainer />
               </div>
+              <div className="row" css={styButtonWrapper}>
+                  <div className="col-md-3">
+                    <a href={GOOGLE_CALENDAR_LINK} title="Add to My Calendar" target="_blank" rel="noreferrer">
+                      <button className="btn btn-default btn-block">Add to Calendar</button>
+                    </a>
+                  </div>
+              </div>
+              <br></br>
               {renderGuestSection()}
               {isInvitation && (
                 <div className="row" css={styButtonWrapper}>
@@ -86,6 +95,7 @@ function WelcomeSection({ location, guestName, isInvitation, isAnonymGuest, code
               )}
             </div>
           </div>
+          <br></br>
           <div className="row">
             <ScrollToDown loading={loading} onClick={handleShowDetail} />
           </div>

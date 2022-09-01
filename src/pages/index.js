@@ -24,6 +24,11 @@ function Home({ location }) {
   const isAnonymGuest = guestName === '' && !isInvitation;
   const codeLink = getQueryValue(location, 'code') || '';
   const finalTicketLink = `code=${codeLink}&name=${guestName}`;
+  var type = ''
+  if (isInvitation){
+    type = 'invitation'
+  }
+  const finalWishesLink = `code=${codeLink}&name=${guestName}&type=${type}`;
 
   const [showDetailContent, setShowDetailContent] = useState(false);
 
@@ -38,11 +43,11 @@ function Home({ location }) {
       <Fragment>
         <HelloSection isInvitation={isInvitation} />
         <WeddingSection isInvitation={isInvitation} />
-        {isInvitation && <CovidSection />}
-        {isInvitation && <LocationSection />}
+        <CovidSection />
+        <LocationSection />
         <StorySection />
         <PhotoSection />
-        <WishesSection />
+        <WishesSection codeLink={finalWishesLink} />
         <ConfirmationSection guestName={firstName} isInvitation={isInvitation} codeLink={finalTicketLink} />
         <FooterSection isInvitation={isInvitation} />
       </Fragment>

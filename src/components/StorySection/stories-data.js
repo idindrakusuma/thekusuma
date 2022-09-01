@@ -1,50 +1,49 @@
-import ImgKembaliBerjumpa from '@assets/images/p-kembali-berjumpa.jpg';
-import ImgJakartaKroasia from '@assets/images/p-jakarta-kroasia.jpg';
-import ImgBoarding from '@assets/images/p-boarding-smg.jpg';
-import ImgKembaliKeIndonesia from '@assets/images/p-kembali-ke-indonesia.jpg';
-import ImgNdodokLawang from '@assets/images/p-ndodok-lawang.jpg';
+import ImgKhitbah from '@assets/images/khitbah.jpg';
+import ImgTransStudio from '@assets/images/trans-studio.jpg';
+import ImgPerkenalanKeluarga from '@assets/images/perkenalan-keluarga.jpg';
+import ImgArinMiftah from '@assets/images/arin-miftah.png';
 
 export const stories = [
   {
-    title: 'Jumpa Pertama ',
-    date: '10 Oktober 2015',
+    title: 'Perkenalan ',
+    date: '21 Juli 2020',
     description:
-      'Pertama kali kami dipertemukan di sebuah acara malam keakraban di kampus Universitas Dian Nuswantoro. Sebagai seorang mahasiswa baru, kala itu Dinda melihat Indra sedang sibuk memegang megaphone (toa) di tengah hiruk pikuk acara. Belum ada sesuatu yang spesial, kala itu justru Dinda melihat Indra banyak menerima surat pink (tanda kagum) dari teman sesama mahasiswa barunya.',
+      'Kami bisa berkenalan melalui wasilah teman kerja saya, lebih tepatnya salah satu atasan saya di tempat kerja yang kebetulan juga merupakan om nya Arin. Kami berkenalan secara online tanpa pernah bertemu secara langsung sampai kurang lebih dua tahun ke depan. Kami pun saling follow di sosial media tapi hampir tidak ada komunikasi, hanya beberapa kali saling komen story. Pada waktu itu tidak banyak yang saya tau tentang Arin, saya hanya diberi tau oleh om nya bahwa Arin ini baru daftar kuliah setelah sebelumnya berhenti 2 tahun sejak lulus SMA karna mengikuti pendidikkan tahfidz di salah satu pondok tahfidz di Bandung.',
     image: '',
   },
   {
-    title: 'Kembali Berjumpa',
-    date: '9 September 2017',
+    title: 'Kembali Berkomunikasi',
+    date: '31 Desember 2021',
     description:
-      'Konferensi Future Leader Summit 2017 kembali mempertemukan mereka. Dinda sebagai peserta dan Indra sebagai panitia acara. Mulai dari saling sapa, mereka berdua tumbuh perasaan saling ingin mengenal lebih dalam. Seusai acara, Indra memberanikan diri untuk membangun komunikasi dengan Dinda. Dari pesan singkat pertama yang dikirimnya, Indra dan Dinda mulai dekat dan menjadi lebih sering mengirim kabar. ',
-    image: ImgKembaliBerjumpa,
+      'Di penghujung tahun 2021 Arin mengunggah beberapa story mengenai resolusi 2022, saya pun iseng mengomentari dan Arin membalasnya. Dari percakapan tersebut kemudian saya memberanikan diri untuk ngajak ketemu agar bisa berkenalan secara langsung dan Arin pun setuju. Selanjutnya kami tinggal menentukan tempat dan waktu berhubung kami sama-sama punya kesibukan.',
+    image: '',
   },
   {
-    title: 'Kisah Kasih di Kampus',
-    date: 'Oktober 2017 - 2018',
+    title: 'Jumpa Pertama',
+    date: '8 Januari 2022',
     description:
-      'Sebagai sepasang mahasiswa dan mahasiswi, Dinda dan Indra memilih untuk mengisi kisah kasih di kampusnya dengan mengikuti berbagai kompetisi bersama. Kala itu, Dinda adalah mahasiswi Ilmu Komunikasi dan Indra adalah mahasiswa Teknik Informatika. Merupakan kolaborasi yang pas jika mengikuti kompetisi teknologi, Indra berperan sebagai seorang programmer dan Dinda sebagai seorang content development. Dinda dan Indra pernah membuat aplikasi Ayo Toba (Aplikasi Pariwisata Danau Toba) yang diajukan dalam kompetisi IT FEST Universitas Sumatera Utara di awal tahun 2018.',
-    image: ImgJakartaKroasia,
+      'Di Minggu pertama tahun 2022 saya kembali menghubungi Arin untuk ngajak ketemu di hari Sabtu atau Minggu, saat itu kebetulan hari Sabtu Arin akan menghadiri acara wisuda tahfidz temannya di masjid Trans Studio Bandung. Kami pun sepakat untuk bertemu di sana setelah selesai acara. Singkat cerita akhirnya kami pun bertemu, dan di sana kami bercerita cukup banyak mengenai aktifitas masing-masing, keluarga, rencana-rencana di masa depan, dll.',
+    image: ImgTransStudio,
   },
   {
-    title: 'Jakarta & Kroasia',
-    date: '2018 - 2019',
+    title: 'Perkenalan Keluarga',
+    date: '15, 22, 30 Januari 2022',
     description:
-      'Tidak selalu bersama, perjuangan dimulai ketika Indra memutuskan untuk bekerja di Jakarta sebagai seorang Software Engineer di Tokopedia. Belum usai masa LDR, pada 3 Oktober 2018, Dinda juga memutuskan untuk mengambil beasiswa di University of Split, Kroasia. Di bulan November 2018, Indra melangsungkan wisuda dan Dinda hanya bisa memberi virtual support melalui video call. ',
-    image: ImgBoarding,
+      'Beberapa hari setelah berjumpa saya diminta oleh orang tua Arin untuk datang ke rumah dan saya pun menyanggupi. Saya datang ke rumah Arin tepat seminggu setelah kami berjumpa. Di sana saya bertemu dengan orang tua nya dan juga kakak beserta kakak ipar nya, karna Arin merupakan anak bungsu. Perkenalan dengan keluarga ini berlanjut ke minggu berikutnya, dan di minggu depannya lagi tanggal 30 Januari 2022 giliran Arin yang bertemu keluarga saya.',
+    image: ImgPerkenalanKeluarga,
   },
   {
-    title: 'Kembali ke Indonesia',
-    date: '3 Maret 2019',
+    title: 'Khitbah',
+    date: '19 Februari 2022',
     description:
-      'Periode belajar di Kroasia telah selesai. Akhirnya Dinda kembali ke Indonesia! Ada tanggung jawab yang harus Dinda selesaikan seusai dari Kroasia, yakni harus menyelesaikan skripsi dan mencapai target untuk wisuda di bulan Agustus 2019. Selain itu, kembalinya Dinda ke Indonesia menjadi momen yang tepat bagi Indra untuk menyampaikan niat ingin serius kepada orang tua Dinda. Hal itu disambut baik oleh kedua orang tua mereka  dan sepakat akan melaksanakan acara Ndodok Lawang usai Dinda wisuda. Sebelum wisuda, Dinda sudah harus meniti karir di Jakarta sebagai seorang Content Analyst di Ruangguru.',
-    image: ImgKembaliKeIndonesia,
+      'Setelah perkenalan singkat dan beberapa kali bertemu dengan orang tua kemudian kami memutuskan untuk melanjutkan ke proses berikutnya, yaitu khitbah.',
+    image: ImgKhitbah,
   },
   {
-    title: 'Ndodok Lawang',
-    date: '31 Agustus 2019',
+    title: 'Pertemuan Orang Tua',
+    date: '25 Juni 2022',
     description:
-      'Akhirnya tiba di masa Indra dan keluarga hadir ke rumah Dinda untuk menyampaikan niat baik. Mulai dari acara Ndodok Lawang ini, dilanjutkan dengan persiapan pernikahan yang insha Allah akan diselenggarakan pada tanggal 3 Oktober 2020.',
-    image: ImgNdodokLawang,
+      'Akhirnya tiba di masa di mana saya dan orang tua kembali berkunjung ke rumah Arin untuk menentukan tanggal pernikahan yang disepakati akan diselenggarakan pada hari Minggu tanggal 11 September 2022.',
+    image: ImgArinMiftah,
   },
 ];

@@ -1,206 +1,142 @@
-import Nita from '@assets/images/w-nita.jpg';
-import Zakiy from '@assets/images/w-zakiy.jpg';
-import Moletta from '@assets/images/w-moletta.jpg';
-import hapsari from '@assets/images/w-hapsari.jpg';
-import dianara from '@assets/images/w-dianara.jpg';
-import rahma from '@assets/images/w-rahma.jpg';
-import vela from '@assets/images/w-vela.jpg';
-import iqmala from '@assets/images/w-iqmala.jpg';
-import man from './assets/user.png';
-import ihsan from './assets/w-ihsan.jpg';
-import fajar from './assets/w-fajar.jpg';
-import risa from './assets/w-risa.jpg';
-import puspita from './assets/w-puspita.jpg';
-import kamal from './assets/w-kamal.jpg';
-import ghea from './assets/w-ghea.jpg';
-import emsho from './assets/w-emsho.jpg';
-import alvia from './assets/w-alvia.jpg';
-import yunias from './assets/w-yunias.jpg';
-import yunita from './assets/w-yunita.jpg';
-import fitria from './assets/w-fitria.jpg';
-import joshua from './assets/w-joshua.jpg';
-import sibra from './assets/w-sibra.jpg';
-import irfan from './assets/w-irfan-m.png';
-import reza from './assets/w-reza.jpg';
-import jenny from './assets/w-jenny.jpg';
+import default_image from './assets/male.png';
+import hani from './assets/w-hani.jpg';
+import selena from './assets/w-selena.jpg';
+import luffy from './assets/w-luffy.jpg';
+import jilan from './assets/w-jilan.jpeg';
+import dian from './assets/w-dian.jpg';
+import desih from './assets/w-desih.jpeg';
+import ajeng from './assets/w-ajeng.jpeg';
+import lusi from './assets/w-lusi.jpg';
+import ugi from './assets/w-ugi.jpeg';
+import widi from './assets/w-widi.jpeg';
+import jaozah from './assets/w-jaozah.jpg';
+import nia from './assets/w-nia.jpg';
 
 export const wishlist = [
   {
-    name: 'Nita Syarifah',
-    infoName: 'Sahabat SMP Dinda',
-    description: `selamat menempuh hidup baru dinda dan mas indra semoga menjadi pasangan teman hidup selamanya sesurga, enjoy your little family always be happy my sweet couple!🥰🤗 amin`,
-    image: Nita,
+    name: 'Hani',
+    infoName: 'Teman SMP arin',
+    description: `"Maa sya Allah... Alhamdulillah arin🤗
+    Mugia lancar saterasna
+    Aamiin☺️"`,
+    image: hani,
   },
   {
-    name: 'Ihsan Satriawan',
-    infoName: 'Rekan Kerja Indra, Tokopedia',
-    description: `Selamat menggenapkan separuh Agama ya Indra dan Dinda. Semoga melalui pernikahan ini, kalian bisa saling menguatkan dalam mengarungi kehidupan ini baik dalam kondisi senang ataupun susah. Serta semakin dekat dan konsisten dalam menjalankan perintah Agama.`,
-    image: ihsan,
+    name: 'My moon',
+    infoName: 'GPWC ❣️',
+    description: `"Barakallah arinnnn🥰 semoga Allah selalu memberi jalan terbaik untuk kamu❤️ Cinta yang di awali dengan Ridha Allah dan niat yang baik pasti akan selalu ada dalam lindungan serta limpahan  kasih sayang Allah, insyaa Allah ❤️ Ily ❤️"`,
+    image: default_image,
   },
   {
-    name: 'Zakiy Anwar Fahri',
-    infoName: 'Sahabat Dinda & Indra',
-    description: `Hai Indra & Dinda, sebelum nya aku ucapin selamat akhirnya mencapai pernikahan. Semoga pernikahannya lancar dan menjadi keluarga sakinah mawahdah warahmah. Sebagai sahabat mu sejak awal kuliah kita berjuang bersama dan akhirnya sampai titik ini aku seneng banget kamu bisa menggapai cita-cita mu pelan-pelan, setelah ini kamu akan memulai perjalan dengan seorang yang akan lebih setia dari Sahabat yaitu Istri (Dinda), tetep sabar dan setia ya Ndra. Nahh, untuk Dinda bantu sahabat ku semakin baik ya hehe. :D`,
-    image: Zakiy,
+    name: 'Selena Gemesh',
+    infoName: "arini's friend",
+    description: `"MashaAllah akhirnyaa ain🥺🥺🥺sebentar lg km akan mengarungi bahtera rumah tangga.. didepan nanti akan ada ujian dan rintangan yg datang silih berganti, semoga Allah senantiasa memberikan kalian kekuatan utk bs sama2 menghadapinya✨
+    bingung mau ngomong apalagi, yaa intinya smg bahagia Sedunia dan Seakhirat🥺"`,
+    image: selena,
   },
   {
-    name: 'Risalatul Muawanah',
-    infoName: 'Sahabat SMP Dinda',
-    description: `"Hey Din!  Finally ..... Happy Wedding!  Hopefully become a family that Sakinah Mawaddah Warohmah until HIS heaven later! 
-    Become a blessed family and always be happy!  May your dreams always be achieved!  Always complement and support each other! 
-    I will wait for 5 children yea! Hihi 😅😅😘"`,
-    image: risa,
+    name: 'Zalfa ',
+    infoName: 'Teman kuliah Arin di Himi',
+    description: `"Maa syaa Allah, Baarakallah bebb. Mudah2an dikasih kelancaran gaa sampai hati H nantiiii🤩🤩💖
+    Sehat sehat calon pengantin🤍"`,
+    image: default_image,
   },
   {
-    name: 'Moleta Tiara Mahayanti',
-    infoName: 'Sahabat SMP Dinda',
-    description: `"Happy Wedding untuk Dinda dan Mas Indra ❤
-    Semoga menjadi keluarga yang Sakinah Mawardah wa Rahmah Amin.
-    Selamat menempuh hidup yang baru kalian berdua.
-    Setelah ini akan ada babak baru untuk kehidupan kalian 
-    Setelah ini akan ada hal yang kalian belum temukan sebelumnya 
-    Setelah ini hal yang kalian impikan akan terwujud 
-    Terus menjadi pasangan yang dapat menginspirasi semua orang Dinda dan Mas indra dan tetaplah menjadi pribadi yang rendah hati❤ 
-    Dari aku Moleta Sahabatmu 🤎"`,
-    image: Moletta,
+    name: 'Monkey D Luffy',
+    infoName: 'Temen Muallimien Arin ',
+    description: `"Baarakallahulaka Wabaaraka A'laika Wajamaa' bainakuma fii khair🤩"`,
+    image: luffy,
   },
   {
-    name: 'Hapsari Anggraini',
-    infoName: 'Sahabat SMP Dinda',
-    description: `"Selamat menempuh hidup baru Dinda dan mas Indra, semoga menjadi keluarga yg sakinah, mawaddah, warrahmah, yg bahagia, dan menjadi pasangan yg selalu ada dalam keadaan suka maupun duka aamiin.
-    semoga kita cepet dapet ponakan ya, Dinn😂💙"`,
-    image: hapsari,
+    name: 'Jiilaan aaqilah maqdis',
+    infoName: 'Teman arin 😆',
+    description: `"Hay arinnn... udah lama kita gak pernah bertemu dan komunikasi. Selamat ya arin, semoga lancar sampai hari H. Semoga pernikahan arin pernikahan yg bisa bawa arin dan suami ke syurga nya allah. Aminn.. "`,
+    image: jilan,
   },
   {
-    name: 'Herza I.M',
-    infoName: 'Rekan Kerja Indra, Tokopedia',
-    description: `"Untuk Indra dan Dinda, semoga lancar ya acara pernikahannya dan senantiasa aman dan kondusif meski keadaan seperti ini. 
-    Salut dengan ketetapan untuk mengukuhkan ikatan meski sdg banyak rintangan.
-    Pokoknya saya doain yg terbaik untuk kalian berdua, mulai dari hari h acara sampai seterusnya.
-    Semoga jadi keluarga yg sakinah, mawadah, warahmah ya. Amiin.
-    Selamat berbahagia, Indra & Dinda!"`,
-    image: man,
+    name: 'Dian Kurniawan ',
+    infoName: 'Teman sekaligus sodara miftah',
+    description: `"selamat menempuh hidup baru buat sodaraku miftah dan Arin semoga menjadi keluarga yang sakinah,mawadah,warahmah ,semoga selalu dlm ridho Allah SWT dan di limpahi keberkahan ny serta selalu di mudahkan urusanny dalam langkah2 berikutny 🤲🤲😇"`,
+    image: dian,
   },
   {
-    name: 'Dhyanara NP',
-    infoName: 'Rekan Kerja Dinda, NET TV',
-    description: `Semoga pernikahan ini membawa Dinda dan Indra dalam ketentraman (sakinah), cinta (mawaddah) dan welas asih (rohmah). Jika saja semakin tumbuhnya cinta itu tak muat masuk ke rongga dada, semoga Allah berikan kelapangan rasa. Semoga Allah mudahkan segala tujuan awal saat kalian berdua memutuskan bersama:)`,
-    image: dianara,
+    name: 'Desih Bieber',
+    infoName: 'Temen NgeJournal Miftah',
+    description: `"Ihiiiiw alhamdulillaah akhirnya miftah sold out juga, ga jadi ceng2an lagi digroup 🤣
+    semoga sakinah mawaddah warohmah yaa, miftah dan calon istri. dipasihan kalancaran kanggo sadayana, sehat2 calon manten..
+    yuyur insyekyuuur banget liat temen2 miftah sama arin ini 😫"`,
+    image: desih,
   },
   {
-    name: 'Fajar Falahiat',
-    infoName: 'Rekan Kerja Indra, Tokopedia',
-    description: `Selamat menikah Indra Kusuma! Semoga pernikahannya berkah, sakinah mawaddah warohmah. Good luck bro and thanks for being such a good friend and mentor!`,
-    image: fajar,
+    name: 'Jengsil',
+    infoName: 'Temen ngOdoo-nya Miftah',
+    description: `"Barakallah Mifs & Arin. Alhamdulillah undangan yg ditunggu tunggu akhirnya datang, sold out semua temen seperjuangan Odoo 😆. Semoga lancar acaranya menjadi keluarga yang Sakinah mawaddah warahmah saling memiliki saling melengkapi uwu 😙. Gas keun mifs abi tos 2 yeuh !! 🤣"`,
+    image: ajeng,
   },
   {
-    name: 'Pramudina Rahmawati',
-    infoName: 'Sahabat SMA Dinda',
-    description: `Happy Wedding Dinda & Mas indra. Semoga menjadi pasangan yang samawa, dilimpahkan selalu rezeki dan kebahagiaan, dan langgeng sampai akhir hayat yah! 🖤`,
-    image: rahma,
+    name: 'Teh neng dia',
+    infoName: 'Sodaranya miftah',
+    description: `"Barrkallah sodaraku de mimif sama de Arin, semoga menjadi keluarga yang sakinah mawadah warahmah, lancar sampai hari-H nya, AminYaAllahAmin 🤲🏻"`,
+    image: default_image,
   },
   {
-    name: 'Kamal',
-    infoName: 'Rekan Kerja Dinda, Ruangguru',
-    description: `Congrats Dinda & Mas Indra for your marriage. You are a perfect pair. You are an inspiration to me. And have a blissful conjugal life!`,
-    image: kamal,
+    name: 'Rose Blackpink (Ai Lusi)',
+    infoName: 'Adik kesayangan a Miftah meureun😂',
+    description: `"Selamat melepas masa lajang mass bro semoga lancar sampai hari H, aduhh jadi sedihhh ieu tehh😅yang tadinya kemana-mana sama adiknya sekarang mah udah ada pawangnya🤭"`,
+    image: lusi,
   },
   {
-    name: 'Vela Hafira',
-    infoName: 'Sahabat SMA Dinda',
-    description: `Happy Wedding Dinda & Mas Indra. Selamat menempuh perjalanan hidup yang baru. Semoga bertambahlah ketaatan kalian kepada Allah hingga surga menjadi dekat. Dan dilimpahkan rezeki, petunjuk, keberkahan, dan kebahagiaan lahir batin.  Barakallahu laka 💟💟💟`,
-    image: vela,
+    name: 'Bayu Dwi R.',
+    infoName: 'Teman Seperjuangan Miftah saat Ekstensi S1',
+    description: `"Barakallah bro Miftah dan Arin.
+    Semoga pernikahannya senantiasa diberkahi oleh Allah swt. dan menjadi keluarga yang Sakinah, Mawaddah, Warrahmah.. Aamiin ya Allah"`,
+    image: default_image,
   },
   {
-    name: 'Iqmalifa Dwi Nursandhi',
-    infoName: 'Sahabat SMA Dinda',
-    description: `"Im very happy for you dinda & mas indra..
-    Sahabatku dinda.. ini adalah awal perjalanan cinta kalian yang sesungguhnya, membangun cinta dalam satu atap berdua mengarungi samudra kehidupan. Semoga dinda & mas indra menjadi keluarga yang Sakinnah, Mawaddah, & Warahmah.
-    Semoga perjalanan kalian akan tetap indah kala bersama-sama membangun kehidupan yang baru, kehidupan yang mengikatkan janji suci berjanji sehidup semati. May your love continue to grow each and every year. Best wishes on your wedding, happily ever after!❤️"`,
-    image: iqmala,
+    name: 'M. Fahmi Munadi',
+    infoName: 'Teman SMA Arin',
+    description: `"Bismillah..
+    Tidak ada doa yang paling diharapkan kecuali sakinah, mawadah, warahmah. (Itulah doa saya untuk kalian)
+
+    Semoga cinta kalian tidak hanya di dunia tapi sampai surga Aamiin"`,
+    image: default_image,
   },
   {
-    name: 'Abdul Ghofar',
-    infoName: 'Sahabat Kuliah Indra',
-    description: `Selamat menempuh hidup baru indra n dinda semoga menjadi keluarga sakinah mawaddah warrahmah `,
-    image: man,
+    name: 'Ugi',
+    infoName: 'Aku yang kau sakiti',
+    description: `"Harusnya aku yang disana, dampingimu dan bukan dia. Harusnya aku yang kau cinta dan bukan diaaaa.....😂"`,
+    image: ugi,
   },
   {
-    name: 'Puspita Dewi',
-    infoName: 'Rekan Kerja Dinda, Ruangguru',
-    description: `"Dear Dinda & Indra,
-    Barakallahu lakuma wa jama’a baina kuma fii khair.
-    Semoga pernikahan kalian bisa menjadi ladang ibadah dan pahala, dan menjadi pasangan sehidup sesurga. Sakinah, mawaddah wa rahmah selalu. Amiin"`,
-    image: puspita,
+    name: 'Rini Nur Arifah',
+    infoName: 'Temam MTS Miftah',
+    description: `"Miftah....
+    Mudah mudahan pernikahannya langgeng sehidup seSyurga ya..Aamiin ya Alloh..."`,
+    image: default_image,
   },
   {
-    name: 'Ghea Maurizka',
-    infoName: 'Sahabat Kuliah Dinda',
-    description: `Selamat menempuh satu langkah jenjang kehidupan yg baru❤️ semoga dilimpahkan kebahagiaan & keberkahan, serta menjadi keluarga yg sakinah, mawaddah, warahmah ❤️`,
-    image: ghea,
+    name: 'Pawang python',
+    infoName: 'Misal : teman smp arin',
+    description: `"Selamat mip, Pokonamah saya insya Allah rek datang langsung..."`,
+    image: widi,
   },
   {
-    name: 'Emsho',
-    infoName: 'Rekan Kerja Dinda, NET TV',
-    description: `Indra. Sebuwah nama yang sayup sering tak denger saat ciwi ciwi ex net jateng pada rerumpian godain Dinda, kalo pas break syuting Hikayat Insani, medio 2018 lalu. Ada yang cengin, dia nya tersipu malu.. Eh, alhamdulillaah cinta mereka akhirnya berlabuh hingga ke tahap ini. Selamat buat Dinda & Indra. Bahagia selamanya yaa.. `,
-    image: emsho,
+    name: 'JaojahHfzh ',
+    infoName: 'Sodara miftah ',
+    description: `"Barrakallahu laka, selamat menempuh hidup baru de mimif sama de arin.semoga menjadi pernikahan yang langgeng, Sakinah,mawadah,warahmah 🤲 bahagia selalu ya!"`,
+    image: jaozah,
   },
   {
-    name: 'Alvia Tri',
-    infoName: 'Sahabat Kuliah Dinda',
-    description: `Wedding wishes for my dear friends. I hope your life together will be filled with joy, happiness and lots of love`,
-    image: alvia,
+    name: 'Nia Saidah',
+    infoName: 'Teman MTS dan SMA Miftah',
+    description: `"Selamat menempuh hidup baru  sahabatku Miftah dan teh Arin , 'Barakallahu lakum wa baraka alaikum' (mudah-mudahan Allah memberi kalian keberkahan dan melimpahkan atas kalian keberkahan)." 🤗🤲"`,
+    image: nia,
   },
   {
-    name: 'Yunias Belda',
-    infoName: 'Sahabat Kuliah Dinda',
-    description: `"Selamat Berbahagiaaa Dindaaa dan Mas Indraaa ❤️❤️❤️ 
-    Semoga samawaaa yaaa, cepet dpt momongan, jd keluarga kecil yanb bahagia 😘😘😘 luvluvvv"`,
-    image: yunias,
-  },
-  {
-    name: 'Linda Yunitasari',
-    infoName: 'Sahabat Kuliah Dinda',
-    description: `Selamat buat Dinda dan Mas Indra. lancar2 buat acaranyaa.. semoga kelak dijadikan keluarga yg sakinah, mawadah, warahmah.. segera diberikan dedek yg gumush dan pintar biar jadi mahmud❤️ Langgeng terus sampai kakek nenek ya dinds!❤️`,
-    image: yunita,
-  },
-  {
-    name: 'Fitria Ayunisa',
-    infoName: 'Sahabat Kuliah Dinda',
-    description: `Selamat menempuh hidup baru buat Dinda dan Mas Indra!❤️ Semoga samawa yaaa dan cepet dapet momongan :p amin! see you😘🌷`,
-    image: fitria,
-  },
-  // NEW
-  {
-    name: 'Joshua Stephen',
-    infoName: 'Rekan Kerja Indra, Tokopedia',
-    description: `For Indra & Dinda, wishing you the best marriage and everlasting happiness. May you are abundantly blessed as one family.`,
-    image: joshua,
-  },
-  {
-    name: 'Sibra',
-    infoName: 'Rekan Kerja Indra, Tokopedia',
-    description: `Selamat membuka lembaran baru indra dan dinda, semoga menjadi keluarga yang harmonis dan saling menguatkan di masa sulit maupun senang.. congrats bro indra..`,
-    image: sibra,
-  },
-  {
-    name: 'Reza Maskadi',
-    infoName: 'Rekan Kerja Indra, Tokopedia',
-    description:
-      "Selamat menikah untuk Indra dan Dinda, teruslah untuk 'saling', saling menjaga, saling memberi semangat, saling percaya, saling melengkapi, saling mengerti, serta saling saling yang akan kalian temui kedepannya, walau suka dan duka tetaplah jaga `saling` tersebut. Juga semoga menjadi keluarga sakinah mawaddah warrahmah. amin...",
-    image: reza,
-  },
-  {
-    name: 'Irfan Maulana',
-    infoName: 'Rekan Kerja Indra, Tokopedia',
-    description: `"Selamat berbahagia, semoga semakin berkah kehidupannya dan bisa saling melengkapi satu dengan yang lain.
-      Semoga pernikahannya bisa dilanggengkan."`,
-    image: irfan,
-  },
-  {
-    name: 'Jennyka Setiawan',
-    infoName: 'Sahabat Kuliah Dinda',
-    description: `Dinda dan Indra When you read this message you probably already "Sah" Newly Married couple. or if you read this before that then read this again after. hehehehehee... Dinda and Indra you already are match couple 2020, so keep up the good work until only death takes youu guys apart. I definitely know nothing about marriage but people says its the bittersweet of life. But I know one thing you guys can be each other the best of friends, parents, leader, guidance, partner not in crime but in the good thing I know ( crime only can be done by Dinda while in university ) ehehhehehe. Hope you guys prosper and also can be the source to share good value not only for your family but also for the lots and lots of people. May God Bless You both and your "soon to be" family.  Regard - Jeka0ne`,
-    image: jenny,
-  },
+    name: 'Neni ',
+    infoName: 'Temen MTS Miftah',
+    description: `"Barokallahulaka wabaroka 'alaika wajama'a baina kuma fikhoir... Alhamdulillah akhirnya mif menemukan teman seperjuangan buat ibadah terpanjang, mengikat perjanjian terberat dengan Allah swt, semoga dalam perjuangannya menjadi keluarga yg sakinah, mawadah, warohmah, sampai janah, serta cepat2 dikaruniai anak2 yang soleh solehah... aamiin
+    Maaf belum bisa ikut menghadiri acara pernikahannya, hanya bisa mendo'akan semoga lancar segalanya sampai hari H, sehat-sehat semuanya... aamiin"`,
+    image: default_image,
+  }
 ];

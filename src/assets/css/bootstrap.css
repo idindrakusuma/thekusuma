@@ -2066,6 +2066,22 @@ output {
   color: #555555;
 }
 
+.custom-emoji {
+  position: relative;
+  display: inline-flex;
+}
+
+.custom-emoji-botton {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  border-radius: 0;
+  border: 1px outset #FF1493;
+  background-color: transparent;
+  font-size: 15px;
+}
+
 .form-control {
   display: block;
   width: 100%;

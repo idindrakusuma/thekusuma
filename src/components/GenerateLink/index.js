@@ -9,11 +9,11 @@ function GenerateLink() {
   const [name, setName] = useState();
   const [showResult, setShowResult] = useState(false);
   const [successCopy, setSuccessCopy] = useState(false);
-  const [isInvitation, setIsInvitation] = useState(false);
+  const copy = require('clipboard-copy')
 
   const { data, loading } = useGuestData();
 
-  const URL = `https://thekusuma.com?to=${encodeURIComponent(name)}`;
+  const URL = `https://arin.miftahussalam.com?to=${encodeURIComponent(name).replace(/%20/g, "+")}`;
 
   const handleChange = (e) => {
     setType(parseInt(e.target.value, 10));
@@ -22,17 +22,23 @@ function GenerateLink() {
 
   const handleSetName = (e) => {
     setName(e.target.value);
+    setSuccessCopy(false);
   };
 
   const handleCopy = async (text, showAlert = false) => {
     try {
-      await navigator.clipboard.writeText(text);
+      copy(text);
       setSuccessCopy(true);
-      showAlert && alert('Berhasil');
+      showAlert && alert('successfully copied');
     } catch (err) {
       setSuccessCopy(false);
-      alert('Failed to copy! :(');
+      alert('something went wrong');
     }
+  };
+
+  const handleResult = async () => {
+    setShowResult(true);
+    setSuccessCopy(false);
   };
 
   const renderContentType = () => {
@@ -49,7 +55,7 @@ function GenerateLink() {
               placeholder="Nama tamu.."
             ></input>
           </div>
-          <button type="submit" class="btn btn-primary" onClick={() => setShowResult(true)}>
+          <button type="submit" class="btn btn-primary" onClick={() => handleResult()}>
             Generate Link
           </button>
         </Fragment>
@@ -59,13 +65,7 @@ function GenerateLink() {
     if (type === ALL) {
       return (
         <Fragment>
-          <div class="checkbox">
-            <label>
-              <input type="checkbox" checked={isInvitation} onClick={() => setIsInvitation(!isInvitation)} /> Tipe
-              Invitation (Datang offline)
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary" onClick={() => setShowResult(true)}>
+          <button type="submit" class="btn btn-primary" onClick={() => handleResult(true)}>
             Generate Link
           </button>
         </Fragment>
@@ -80,17 +80,17 @@ function GenerateLink() {
       return (
         <div className="col-md-4 col-md-offset-4">
           <div class="alert alert-success" role="alert" style={{ marginTop: '20px' }}>
-            <strong>Berhasil!</strong> <br />
+            <strong>Berhasil !</strong> <br />
             <a href={URL} target="_blank" rel="noreferrer" style={{ color: 'green', textDecoration: 'underline' }}>
               {URL}
             </a>
             <button
               type="button"
               className="btn btn-default btn-xs"
-              style={{ marginLeft: '8px' }}
+              style={{ fontSize: '12px', padding: '4px 8px', marginLeft: '4px' }}
               onClick={() => handleCopy(URL)}
             >
-              {successCopy ? 'Tersalin' : 'Salin'}
+              {successCopy ? 'copied' : 'copy'}
             </button>
           </div>
         </div>
@@ -112,8 +112,7 @@ function GenerateLink() {
               </thead>
               <tbody>
                 {data.map((d, index) => {
-                  const offlineInvitation = isInvitation ? `&type=invitation&code=${d.code}` : '';
-                  const mapURL = `https://thekusuma.com?to=${encodeURIComponent(d.name)}${offlineInvitation}`;
+                  const mapURL = `https://arin.miftahussalam.com?to=${encodeURIComponent(d.name).replace(/%20/g, "+")}&type=invitation&code=${d.code}`;
                   return (
                     <tr>
                       <td>{index + 1}</td>
@@ -124,9 +123,10 @@ function GenerateLink() {
                           {mapURL}
                         </a>
                         <button
-                          className="btn btn-default btn-sm"
+                          type="button"
+                          className="btn btn-default btn-xs"
                           style={{ fontSize: '12px', padding: '4px 8px', marginLeft: '4px' }}
-                          onClick={() => handleCopy(mapURL, true)}
+                          onClick={() => handleCopy(mapURL)}
                         >
                           copy
                         </button>
@@ -145,7 +145,7 @@ function GenerateLink() {
   return (
     <div>
       <h2 className="title">Generator of Link Invitation</h2>
-      <h3 className="title__sub">Dinda & Indra Wedding</h3>
+      <h3 className="title__sub">Arin & Miftah Wedding</h3>
 
       {loading && <h4 style={{ textAlign: 'center' }}>Memuat data..</h4>}
 
