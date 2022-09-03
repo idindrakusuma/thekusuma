@@ -9,12 +9,12 @@ import WelcomeSection from '@components/WelcomeSection';
 import HelloSection from '@components/HelloSection';
 import WeddingSection from '@components/WeddingSection';
 import LocationSection from '@components/LocationSection';
-import StorySection from '@components/StorySection';
+//import StorySection from '@components/StorySection';
 import PhotoSection from '@components/PhotoSection/Loadable';
-import WishesSection from '@components/WishesSection';
+//import WishesSection from '@components/WishesSection';
 import ConfirmationSection from '@components/ConfirmationSection';
 import FooterSection from '@components/FooterSection';
-import CovidSection from '@components/Covid19';
+//import CovidSection from '@components/Covid19';
 import FloatingMusic from '@components/FloatingMusic/Loadable';
 
 function Home({ location }) {
