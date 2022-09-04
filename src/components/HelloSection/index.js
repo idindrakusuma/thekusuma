@@ -7,7 +7,7 @@ import Groom from '@assets/images/hakim.jpg';
 import { styWrapper } from './styles';
 
 function HelloSection({ isInvitation }) {
-  const finalSubtitle = 'Minggu, 11 September 2022';
+  
 
   return (
 	<Fragment>
@@ -16,7 +16,7 @@ function HelloSection({ isInvitation }) {
 		  <div className="row">
 			<div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
 			  <h2 className="main-font">Assalamualaikum Wr. Wb</h2>
-			  <h3 className="sub-title hs">{finalSubtitle}</h3>
+			  
 			  <p className="info">
 				Dengan memohon Rahmat dan Ridho Illahi, teriring niat menjalankan Sunnah Rasulullah ﷺ untuk membentuk
 				rumah tangga yang Sakinah, Mawaddah wa Rahmah, kami mohon do'a agar senantiasa diberikan kelancaran dan
