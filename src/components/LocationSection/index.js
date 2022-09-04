@@ -41,23 +41,24 @@ function LocationSection() {
                 title="Google Maps - Eka & Hakim Wedding Party"
               ></iframe>
             </div>
-            <div className="row">
-              <div className="col-md-10 col-md-offset-1">
-                <img
-                  src={Peta}
-                  class="center"
-                  display="block"
-                  margin-left="auto"
-                  margin-right="auto"
-                  width="100%"
-                  height="100%"
-                  frameBorder="0"
-                  aria-hidden="false"
-                  tabIndex="0"
-                  title="Peta Lokasi"
-                  alt="peta-lokasi-cangkring"
-                ></img>
-              </div>
+          </div>
+          <div className="row">
+            <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+              <h2 className="main-font">Lokasi Acara</h2>
+              <p className="sub-title">
+                <a
+                  href={GOOGLE_MAPS_LINK}
+                  title="Click untuk melihat peta di Google Maps"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: '#828282' }}
+                >
+                  <strong>Baleendah, Bandung</strong>
+                </a>{' '}
+                <br />
+                Jl. Laswi Cangkring RT/RW 05/07
+                kel. Jelekong, kec. Baleendah, kab. Bandung
+              </p>
             </div>
           </div>
         </div>
