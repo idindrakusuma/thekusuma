@@ -19,11 +19,11 @@ function LocationSection() {
                   rel="noreferrer"
                   style={{ color: '#828282' }}
                 >
-                  <strong>Baleendah, Bandung</strong>
+                  <strong>Lokasi Eka</strong>
                 </a>{' '}
                 <br />
-                Jl. Laswi Cangkring RT/RW 05/07
-                kel. Jelekong, kec. Baleendah, kab. Bandung
+                RT 026 RW 012 Dusun Kajar
+                Desa Kalipang, Kecamatan Grogol, Kabupaten Kediri
               </p>
             </div>
           </div>
@@ -52,11 +52,11 @@ function LocationSection() {
                   rel="noreferrer"
                   style={{ color: '#828282' }}
                 >
-                  <strong>Baleendah, Bandung</strong>
+                  <strong>Lokasi Hakim</strong>
                 </a>{' '}
                 <br />
-                Jl. Laswi Cangkring RT/RW 05/07
-                kel. Jelekong, kec. Baleendah, kab. Bandung
+                RT 026 RW 012 Dusun Winongsari Kulon
+                Desa Bakalan, Kecamatan Grogol, Kabupaten Kediri
               </p>
             </div>
           </div>
