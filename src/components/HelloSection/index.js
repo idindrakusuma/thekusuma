@@ -18,9 +18,10 @@ function HelloSection({ isInvitation }) {
 			  <h2 className="main-font">Assalamualaikum Wr. Wb</h2>
 			  
 			  <p className="info">
-				Dengan memohon Rahmat dan Ridho Illahi, teriring niat menjalankan Sunnah Rasulullah ﷺ untuk membentuk
-				rumah tangga yang Sakinah, Mawaddah wa Rahmah, kami mohon do'a agar senantiasa diberikan kelancaran dan
-				keberkahan.
+			  		Maha Suci Allah,
+				Yang telah menciptakan makhluknya berpasang-pasangan
+				Ya Allah perkenankanlah dan ridhoilah 
+				pernikahan kami :
 			  </p>
 			</div>
 		  </div>
@@ -30,9 +31,9 @@ function HelloSection({ isInvitation }) {
 				<img src={Bride} alt="groom" className="img-responsive" loading="lazy" />
 			  </div>
 			  <div className="desc-groom">
-				<h3 className="main-font">Ekai Dewi Al-Faaz</h3>
+				<h3 className="main-font">Eka Novitasari</h3>
 				<p className="parent-name parent-name__top">
-				  Putri Bapak Romli Hidayat <br />& Ibu Siti Zainah Zakiyah (Ipih)
+				  Putri Bapak Zainal Arifin <br />& Ibu Rukmi
 				</p>
 			  </div>
 			</div>
@@ -47,9 +48,9 @@ function HelloSection({ isInvitation }) {
 				<img src={Groom} alt="groom" className="img-responsive" loading="lazy" />
 			  </div>
 			  <div className="desc-bride">
-				<h3 className="main-font">Hakimussalam</h3>
+				<h3 className="main-font">Muhammad Hakim Setyobudi</h3>
 				<p className="parent-name">
-				  Putra Bapak Atang <br />& Ibu Manah
+				  Putra Bapak Asmadi (Alm.) <br />& Ibu Mardiyah
 				</p>
 			  </div>
 			</div>
